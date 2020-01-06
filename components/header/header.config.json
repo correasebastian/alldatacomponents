@@ -1,0 +1,21 @@
+{
+  "title": "header component",
+  "context": {
+    "text": "This is an header component!",
+    "heading": "My heading",
+    "menus":[
+      {"url":"/PRODUCTS","name": "PRODUCTS" , "submenus":[]},
+      {"url":"/SUPPORT","name": "SUPPORT" , "submenus":[]},
+      {"url":"/RESOURCES","name": "RESOURCES" , "submenus":[]},
+      {"url":"/ABOUT US","name": "ABOUT US" , "submenus":[]},
+      {"url":"/BUY NOW","name": "BUY NOW" , "submenus":[]}
+    ],
+    "menusSetup":[
+      {"url":"/call","name": "800-697-2533" , "submenus":[]},
+      {"url":"/rep","name": "CONTACT A REP" , "submenus":[]},
+      {"url":"/RESOURCES","name": "US" , "submenus":["Canada", "Europe", "Mexico", "US" ]},
+      {"url":"/ABOUT US","name": "ENGLISH" , "submenus":[]},
+      {"url":"/login","name": "BUY NOW" , "submenus":[]}
+    ]
+  }
+}

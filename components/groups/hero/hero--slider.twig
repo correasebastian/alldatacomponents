@@ -1,0 +1,21 @@
+
+
+{% set columContent %}
+  {# <h4>columncontent</h4> #}
+    {% set carouselId = "carouselHeroSlider" %}
+    {% set extraData = {extrainfo: 'hero-slides'} %}
+    {% set template = "jumbo" %}
+    {% include "@slider--dyn" with {carouselId:carouselId, models : heroes, sameHeight: true, template : template, extraData: extraData} %}
+{% endset %}
+
+{% set skewContent %}
+
+  {% include "@tricolor--position" %}
+  <div class="cmp-hero">
+    {% include "@cols" with {content : columContent, mobileModifier: "1", tabletModifier: "2", } only %}
+  </div>
+{% endset %}
+
+{% include "@skew" with {content: skewContent, classes: 'overlap-next-6' } %}
+
+{# {{content}} #}

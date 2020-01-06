@@ -1,0 +1,29 @@
+{
+  "name": "generator-fractal-component",
+  "version": "0.3.0",
+  "description": "front end fractal component generator",
+  "homepage": "",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "cq"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "find": "^0.2.7",
+    "html-wiring": "^1.2.0",
+    "path": "^0.12.7",
+    "path-exists": "^3.0.0",
+    "yeoman-generator": "^0.24.1",
+    "yosay": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

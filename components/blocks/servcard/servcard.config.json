@@ -1,0 +1,14 @@
+{
+  "title": "servcard component",
+  "context": {
+    "src": "/images/carfix.jpg",
+    "heading": "Independent collision shops",
+    "headingLevel": "h6",
+    "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+    "textLink" : "Learn More",
+    "link" : "https://www.google.com",
+    "middlePos" : false, 
+    "lastCard" : false
+    
+  }
+}

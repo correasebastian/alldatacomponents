@@ -1,0 +1,12 @@
+
+<div class="cmp-companies">
+
+    {% for company in companies %}
+    <div class="cmp-companies-company">
+        {% include "units/image/image.twig" with company %}
+        <span class="cmp-company-type">customer</span>
+    </div>
+    {% endfor %}
+    
+</div>
+

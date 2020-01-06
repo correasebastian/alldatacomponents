@@ -1,0 +1,26 @@
+
+
+<section class="cmp-skew columns is-centered {{ skewClass ?  skewClass : ''}} {{ overlapPrev ?  'overlap-prev-section' : ''}} {{ bgImage ?  'position-relative bg-transparent' : ''}} {{ skewBg ?  skewBg : ''}} {{ classes ?  classes : ''}} {% if overflowUnset %} overflow-unset {% endif %}"
+    {% if inlineBgImage %}  style=" background-image: url({{inlineBgImage}}); background-size: cover; border-bottom: 1px solid white; " {% endif %}
+>
+
+
+{% if skewClass %}
+    <div class="inner-section {{ cmpClass ?  cmpClass : ''}}">
+        {% if content %}
+            {{content}}
+        {% endif %}
+    </div>
+{% else %}
+    
+    {% if bgImage %}
+        {% include "units/image/image.twig" %}
+    {% endif %}
+
+    {% if content %}
+        {{content}}
+    {% endif %}
+
+{% endif %}
+    
+</section>

@@ -1,0 +1,15 @@
+
+{# php logic if is an svg image clear the sizes and srcset variables, we dont need them #}
+
+
+
+{% if src ends with '.svg' %}
+    <img class="cmp-image {% if classes %} {{classes}} {% endif %}" src="{{src}}" alt="{{alt}}">
+{% else %}
+    <img class="cmp-image {% if classes %} {{classes}} {% endif %}" src="{{src}}" alt="{{alt}}" {% if sizes %} sizes="{{sizes}}" {% endif %} {% if srcset %} srcset="{{srcset}}" {% endif %}  >
+
+    
+    
+{% endif %}
+
+{# $0.currentSrc #}

@@ -1,0 +1,16 @@
+/**
+ *  Main css for Imageblue
+ */
+
+.cmp-imageblue {
+  width: fit-content;
+  .cmp-image{
+    opacity: .5;
+    transition: .3s;
+  }
+}
+.cmp-imageblue:hover .cmp-image{
+  opacity: 1;
+  transition: 0.3s;
+}
+

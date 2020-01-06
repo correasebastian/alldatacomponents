@@ -1,0 +1,26 @@
+
+<div class="cmp-latest">
+    <div class="container">
+        {% include "@jumbo" with 
+            {
+                "headingLevel": "h2",
+                "btnText": "",
+                "threelines": true,
+                "modifier": "No Button and no simple text"
+            } 
+        %}
+
+        <div class="cmp-latestcards__cardcontainer">
+            <div class="row">
+                {% for card in cards %}
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        {% include "@latestcard" with card %}
+                    </div>
+                {% endfor %}
+                    <div class="more-news d-none d-md-block">
+                        {% include "@button" %}
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+
+{% if models|length > 0 %}
+        {% for model in models %}
+            {% if extraData %}
+                {% set model = model|merge(extraData) %}
+            {% endif %}
+            {% set slideContent %}
+                    {% include "@" ~ template with model only %}
+            {% endset %}
+            {% include "@slider--slide" with {slideContent : slideContent, active: loop.first } %}
+        {% endfor %}
+
+{% endif %}
+

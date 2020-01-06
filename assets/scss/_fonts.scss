@@ -1,0 +1,65 @@
+
+/* ======================= */
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Medium'), local('Gotham-Medium'),
+        url(../fonts/Gotham-Medium.woff);
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham Ultra';
+    src: local('Gotham Ultra'), local('Gotham-Ultra'),
+        url(../fonts/Gotham-Ultra.woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham Book';
+    src: local('Gotham Book'), local('Gotham-Book'),
+        url(../fonts/Gotham-Book.woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Light'), local('Gotham-Light'),
+        url(../fonts/Gotham-Light.woff);
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Thin'), local('Gotham-Thin'),
+        url(../fonts/Gotham-Thin.woff);
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Bold'), local('Gotham-Bold'),
+        url(../fonts/Gotham-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+  }
+
+ 
+  html, body{
+    font-family: 'Gotham';
+  }
+
+  @function fromPxtoRem($px) {
+    $result: ( $px / 16 ) * 1rem ;
+    @return $result;
+  }
+
+  @mixin fontSize($size ) {
+    // convert from px to rem $size is an integert without px example 18
+    font-size: ($size / 16) * 1rem;
+  }

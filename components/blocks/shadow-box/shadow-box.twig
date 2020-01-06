@@ -1,0 +1,24 @@
+
+{% set columContent %}
+  <div class="cmp-shadow-box-img">
+    {% include "units/image/image.twig" with image|merge({classes: 'img-fluid'}) %}
+
+    
+    <div class="cmp-shadow-box-play-container">
+      <button class="btn">
+
+        {% include "units/image/image.twig" with {src:'/images/play.svg'} %}
+          <span class="sr-only"></span>
+      </button>
+    </div>
+
+  </div>
+  <div class="cmp-shadow-box-quote">
+      {% include "@quote" with quote only %}
+  </div> 
+{% endset %}
+
+<div class="cmp-shadow-box">
+    {% include "@cols" with {content : columContent, mobileModifier: "1", tabletModifier: "2", noGutter:true } only %}
+</div>
+

@@ -1,0 +1,27 @@
+{% set content %}
+<div class="cmp-jumbo {% if modifier %} cmp-jumbo__{{modifier}} {% endif %}">
+
+
+{# headingLevel are h1 h2 h3 etc #}
+   {% include '@heading' with {classes : "cmp-jumbo__heading" } %}
+ 
+   {% include '@simpletext' %}
+
+   {% if btnText is not empty %}
+      {% include 'units/button/button.twig' %}
+   {% endif %}
+</div>
+
+
+   {# {{ dump(text) }} #}
+   {# <i class="fab fa-algolia"></i> #}
+   {# the button can read the text on the jumbo component no need to explicit pass 'whit; #}
+   {# {% include '@button' %} #}
+  
+{% endset %}
+
+{{content}}
+
+{# no need to explicit pass it also #}
+{# {% include "@skew" %} #}
+{# {% include "@skew" with {'content' : content} %} #}

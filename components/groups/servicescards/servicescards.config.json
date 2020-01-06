@@ -1,0 +1,68 @@
+{
+  "title": "servicescards component",
+  "context": {
+    "heading": "Who we serve",
+    "cards": [
+      {
+        "src": "/images/carfix.jpg",
+        "heading": "Independent collision shops",
+        "headingLevel": "h6",
+        "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com"
+      },
+      {
+        "src": "/images/carfix.jpg",
+        "heading": "Independent collision shops",
+        "headingLevel": "h6",
+        "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen. Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen. Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com",
+        "middlePos" : true
+      },
+      {
+        "src": "/images/carfix.jpg",
+        "heading": "Independent collision shops",
+        "headingLevel": "h6",
+        "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com"
+      },
+      {
+        "src": "/images/carfix.jpg",
+        "heading": "Independent collision shops",
+        "headingLevel": "h6",
+        "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com"
+        
+      },
+      {
+        "src": "/images/carfix.jpg",
+        "heading": "Independent collision shops",
+        "headingLevel": "h6",
+        "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com",
+        "middlePos" : true
+      },
+      {
+        "src": "/images/carfix.jpg",
+        "heading": "Independent collision shops",
+        "headingLevel": "h6",
+        "text": "Our Collision Advantage integrates with the three major estimating systems, analyzing your estimate in seconds and displaying on a single screen.",
+        "textLink" : "Go to diy site",
+        "link" : "https://www.google.com",
+        "lastCard": true
+      }
+    ],
+    "inlineBgImage": "/images/carfix2.jpg",
+    "jumboContent":
+    {
+      "headingLevel": "h2",
+      "btnText": "About Us",
+      "threelines": true,
+      "text" : "We are a <strong>data-driven solutions provider</strong> working <strong>hard</strong> and <strong>smart</strong> to help automotive repair shops be the <strong>best they can be</strong>."
+    }
+  }
+}

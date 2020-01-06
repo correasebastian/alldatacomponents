@@ -1,0 +1,17 @@
+
+{% set skewContent %}
+    <div class="cmp-testimonial">
+        <div class="cmp-testimonial-inner">
+            {% set carouselId = "carouselTestimonialSlider" %}
+            {# {% set extraData = {extrainfo: 'hero-slides'} %} #}
+            {% set template = "shadow-box" %}
+            {% include "@slider--dyn" with {carouselId:carouselId, models : testimonials, sameHeight: false, template : template} %}
+            <div class="cmp-testimonial-footer" >
+                {% include "units/simpletext/simpletext.twig" %}
+                {% include "@button" %}
+            </div>
+        </div>
+    </div>
+{% endset %}
+
+{% include "@skew" with {content: skewContent,skewClass: 'skew-md-6', inlineBgImage: inlineBgImage } %}

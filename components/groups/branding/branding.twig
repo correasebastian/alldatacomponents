@@ -1,0 +1,24 @@
+
+{% set cardsContent %}
+
+    {% for card in cards %}
+        {% include "@brandingcard" with card only %}
+    {% endfor %}
+    
+{% endset %}
+
+{% set content %}
+    {# <p>hi</p> #}
+    <div class="cmp-branding text-white py-4 px-5 pb-lg-0">
+        {% include "@jumbo--simple" %}
+        {% include "@cols" with {content: cardsContent} %}
+    </div>
+{% endset %}
+
+
+{% set skewClass = 'skew-6' %}
+{% set skewBg = 'bg-primary' %}
+{# {% set cmpClass = 'cmp-branding' %} #}
+
+{% include "@skew" %}
+

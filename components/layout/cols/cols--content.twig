@@ -1,0 +1,12 @@
+
+
+{% set content %}
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+    
+{% endset %}
+<div class="cmp-cols row {% if mobileModifier %} cols-{{mobileModifier}}{% endif %} {% if tabletModifier %} cols-md-{{tabletModifier}}{% endif %} {% if tabletModifier %} cols-lg-{{desktopModifier}}{% endif %} ">
+    {{content}}
+</div>

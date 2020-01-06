@@ -1,0 +1,36 @@
+/**
+ *  Main css for Companies
+ */
+
+.cmp-companies {
+    display: flex;
+    flex-wrap: wrap;
+
+    .cmp-companies-company{
+        // width: 33%;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        @extend .py-2;
+        text-align: center;
+
+        .cmp-image{
+        }
+
+        .cmp-company-type{
+            margin-top: 1rem;
+            display: block;
+            line-height: 1.25;
+            letter-spacing: 0.16px;
+            font-size: fromPxtoRem(8);
+        }
+
+        @include media-breakpoint-up(md){
+            flex: 0 0 16.666%;
+            max-width: 16.666%;
+        }
+    }
+
+    
+
+}
+

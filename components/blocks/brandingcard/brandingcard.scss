@@ -1,0 +1,50 @@
+/**
+ *  Main css for Brandingcard
+ */
+
+ $hrColor: rgba(255, 255, 255, 0.2);
+.cmp-brandingcard {
+    // @extend .text-white;
+    // @extend .bg-primary;
+    // @extend .text-center;
+
+    .cmp-image{
+        max-width: 25vw ;
+        margin-bottom: 1.5rem ;
+    }
+
+    .cmp-heading{
+        text-transform: uppercase;
+        //zepplin
+        @include fontSize(18);
+        line-height: 1.56;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        font-weight: normal; // review this
+
+    }
+    .cmp-text{
+        @include fontSize(14);
+        line-height: 1.71;
+        opacity: 0.6;
+        margin-bottom: fromPxtoRem(48);
+    }
+
+    .cmp-brandingcard__line{
+        border-color:$hrColor;
+        border-width: 1.4px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 30vw;
+    }
+
+    @include  media-breakpoint-up(lg){
+        .cmp-image{
+            // max-width: 10vw ;
+            width: 8vw;
+            height: 8vw;
+        }
+        
+    }
+}
+

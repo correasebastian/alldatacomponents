@@ -1,0 +1,35 @@
+
+{% macro getSpaces(ctx) %}
+    {% if ctx is defined %}
+        {% set spacesArray = []  %}
+
+            {% if ctx.py is defined %}
+                  {% set spacesArray = spacesArray | merge([ctx.py])  %}
+            {% endif %}
+
+            {% if ctx.px is defined %}
+                  {% set spacesArray = spacesArray | merge([ctx.px])  %}
+            {% endif %}
+            
+            {% if ctx.pyLg is defined %}
+                  {% set spacesArray = spacesArray | merge([ctx.pyLg])  %}
+            {% endif %}
+
+            {% if ctx.pxLg is defined %}
+                  {% set spacesArray = spacesArray | merge([ctx.pxLg])  %}
+            {% endif %}
+            {% if ctx.my is defined %}
+                  {% set spacesArray = spacesArray | merge([ctx.my])  %}
+            {% endif %}
+
+            {% if ctx.mx is defined %}
+                  {% set spacesArray = spacesArray | merge([ctx.mx])  %}
+            {% endif %}
+
+        {% set spaces = spacesArray | join(' ') %}
+        
+        {{spaces}}
+    {% endif %}
+{% endmacro %}
+
+

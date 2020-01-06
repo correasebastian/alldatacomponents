@@ -1,0 +1,116 @@
+<header class="cmp-header">
+    <div class="cmp-header__nav-setup ">
+        <nav class="navbar">
+            <ul class="navbar-menu">
+
+                {% for menu in menusSetup %}
+
+                {% if menu.submenus.length  %}
+                <li class="navbar-item has-dropdown is-hoverable">
+
+                    <a class="navbar-link">
+                        {{ menu.name}}
+                    </a>
+
+                    <div class="navbar-dropdown">
+
+                        {% for submenu in menu.submenus %}
+                        <a class="navbar-item">
+                            {{submenu}}
+                        </a>
+                        {% endfor %}
+
+                    </div>
+                </li>
+                {% else %}
+                <li class="navbar-item">
+                    <a href="">
+                        {{ menu.name}}
+                    </a>
+                </li>
+                {% endif %}
+
+
+                {% endfor %}
+
+            </ul>
+        </nav>
+
+    </div>
+    {# <nav>
+        <ul class="columns">
+            {% for menu in menus %}
+            <li class="column"> <a href="{{menu.url}}"></a> {{menu.name}}</li>
+            {% endfor %}
+        </ul>
+    </nav> #}
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/images/logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+                {% for menu in menus %}
+                <a href="{{menu.url}}" class="navbar-item">
+                    {{menu.name}}
+                </a>
+                {% endfor %}
+
+
+                {# <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div> #}
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    {# <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div> #}
+                    <span class="icon has-text-info">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                    <span class="icon has-text-success">
+                        <i class="fas fa-check-square"></i>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

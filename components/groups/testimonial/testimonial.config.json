@@ -1,0 +1,18 @@
+{
+  "title": "testimonial component",
+  "context": {
+    "testimonials": [
+      "@shadow-box",
+      "@shadow-box"
+    ],
+    "text":"See what over 400,000 technicians can't work without.",
+    "btnText":"Get Started",
+    "inlineBgImage": "/images/testimonialbg.png"
+  },
+  "variants":[
+    {"name": "overlap",
+    "context":{
+      "overlapPrev": true
+    }}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "jumbo component",
+  "context": {
+    "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+    "heading": "AUTOMOTIVE INTELLIGENCE",
+    "headingLevel": "h1",
+    "btnText": "shop products",
+    "threelines": true
+  },
+  "variants":[
+    {"name": "No three lines",
+      "context": {
+        "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+        "heading": "AUTOMOTIVE INTELLIGENCE",
+        "headingLevel": "h1",
+        "btnText": "shop products",
+        "threelines": false
+      }
+    },
+    {"name": "No Button",
+      "context": {
+        "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+        "heading": "AUTOMOTIVE INTELLIGENCE",
+        "headingLevel": "h1",
+        "btnText": "",
+        "threelines": true
+      }
+    },
+    {"name": "No Button and no Three lines",
+      "context": {
+        "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+        "heading": "AUTOMOTIVE INTELLIGENCE",
+        "headingLevel": "h1",
+        "btnText": "",
+        "threelines": false
+      }
+    }
+    ,
+    {"name": "No Button and no simple text",
+      "context": {
+        "text": "",
+        "heading": "Who we serve",
+        "btnText": "",
+        "threelines": true
+      }
+    }
+    ,
+    {"name": "simple",
+      "context": {
+        "heading": "Why ALLDATA",
+        "text": "ALLDATA is the industry’s #1 choice for OEM-accurate mechanical and collision repair information, shop management software, and support services, trusted by more than 400,000 technicians in over 115,000 shops worldwide."
+      }
+    }
+  ]
+}

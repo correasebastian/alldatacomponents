@@ -1,0 +1,42 @@
+{
+  "title": "hero component",
+  "context": {
+    "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+    "heading": "AUTOMOTIVE INTELLIGENCE",
+    "headingLevel": "h1",
+    "btnText": "shop products",
+    "threelines": true,
+    "bgImage": true,
+    "src": "https://res.cloudinary.com/alldataborn/image/upload/v1577487943/alldata/hero_jhnfsz.jpg",
+    "sizes": "100vw",
+    "alt": "hero",
+    "srcset": "https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_200/v1577487943/alldata/hero_jhnfsz.jpg 200w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_400/v1577487943/alldata/hero_jhnfsz.jpg 400w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_600/v1577487943/alldata/hero_jhnfsz.jpg 600w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_800/v1577487943/alldata/hero_jhnfsz.jpg 800w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_1000/v1577487943/alldata/hero_jhnfsz.jpg 1000w"
+
+  },
+  "variants": [{
+    "name": "slider",
+    "context": {
+      "heroes": [{
+          "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+          "heading": "KYAUTOMOTIVE INTELLIGENCE",
+          "headingLevel": "h1",
+          "btnText": "shop products",
+          "threelines": true,
+          "bgImage": true
+        }, {
+          "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
+          "heading": "Testing Carousel",
+          "headingLevel": "h1",
+          "btnText": "hello world",
+          "threelines": true,
+          "bgImage": true
+        }
+      ],
+      "src": "https://res.cloudinary.com/alldataborn/image/upload/v1577487943/alldata/hero_jhnfsz.jpg",
+      "sizes": "100vw",
+      "alt": "hero",
+      "srcset": "https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_200/v1577487943/alldata/hero_jhnfsz.jpg 200w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_400/v1577487943/alldata/hero_jhnfsz.jpg 400w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_600/v1577487943/alldata/hero_jhnfsz.jpg 600w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_800/v1577487943/alldata/hero_jhnfsz.jpg 800w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_1000/v1577487943/alldata/hero_jhnfsz.jpg 1000w"
+
+    }
+  }]
+}

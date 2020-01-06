@@ -1,0 +1,41 @@
+{
+  "title": "branding component",
+  "context": {
+    "heading": "Why ALLDATA",
+    "text": "ALLDATA is the industry’s #1 choice for OEM-accurate mechanical and collision repair information, shop management software, and support services, trusted by more than 400,000 technicians in over 115,000 shops worldwide.",
+    "mobileModifier": "1",
+    "desktopModifier": "3",
+    "overlapPrev": false,
+    "cards": [{
+      "heading": "Repair Information",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan sapien a orci pharetra pretium.",
+      "headingLevel": "h3",
+      "alt": "mechanic",
+      "src": "/images/mechanic.svg"
+    },
+    {
+      "heading": "diagnostics",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan sapien a orci pharetra pretium.",
+      "headingLevel": "h3",
+      "alt": "tyre",
+      "src": "/images/tyre.svg"
+    },
+    {
+      "heading": "shop management",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan sapien a orci pharetra pretium.",
+      "headingLevel": "h3",
+      "alt": "key",
+      "src": "/images/key.svg"
+    }
+  
+  ]
+  },
+  "variants":[
+    {
+      "name": "overlap",
+      "context": {
+        "overlapPrev": true
+      }
+    }
+  ]
+}

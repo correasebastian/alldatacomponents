@@ -1,0 +1,11 @@
+{
+  "title": "shadow-box component",
+  "context": {
+    "text": "This is an shadow-box component!",
+    "image": {
+      "src":"https://res.cloudinary.com/alldataborn/image/upload/v1577747528/alldata/juan_iact8j.png",
+      "alt": "happy man"
+    },
+    "quote": "@quote"
+  }
+}

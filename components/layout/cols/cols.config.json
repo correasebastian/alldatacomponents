@@ -1,0 +1,9 @@
+{
+  "title": "cols component",
+  "context": {
+    "text": "This is an cols component!",
+    "mobileModifier":"1",
+    "tabletModifier":"2",
+    "desktopModifier": "3"
+  }
+}

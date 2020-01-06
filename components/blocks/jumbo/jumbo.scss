@@ -1,0 +1,76 @@
+/**
+ *  Main css for Jumbo
+ */
+
+.cmp-jumbo {
+
+    .cmp-jumbo__heading{
+
+        &h1 {
+            margin-bottom: 2rem;
+    
+            //zepplin
+            font-size: 2rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1; // corrected from live
+            letter-spacing: .53px;
+        }
+    }
+
+   
+
+    .cmp-threelines {
+        margin-bottom: 2rem;
+    }
+
+    .cmp-text {
+        margin-bottom: 2rem;
+
+        // from zepplin
+        font-size: .875rem; 
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75; 
+        letter-spacing: normal;
+        // color: $gray-650;
+
+    }
+
+    &.cmp-jumbo__simple{
+        text-align: center;
+
+        .cmp-jumbo__heading{
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        .cmp-jumbo__heading{
+            &h1 {
+                margin-bottom: 1.5rem;
+    
+                //zepplin
+                font-size: 3.75rem;
+                letter-spacing: 1px;
+            }
+
+        }
+
+        .cmp-text {
+            // margin-bottom: 2rem;
+
+            // from zepplin
+            font-size:  1.25rem;
+            line-height: 1.5;
+            // color: $gray-650;
+
+        }
+    }
+
+
+
+}

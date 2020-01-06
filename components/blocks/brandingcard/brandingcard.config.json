@@ -1,0 +1,13 @@
+{
+  "title": "brandingcard component",
+  "context": {
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan sapien a orci pharetra pretium.",
+    "heading": "My heading",
+    "headingLevel": "h3",
+    "textColor": "white",
+    "backgroundColor": "primary",
+    "alt": "mechanic",
+    "src": "/images/mechanic.png",
+    "srcset": "/images/mechanic.png 80w, /images/mechanic@2x.png 160w, /images/mechanic@3x.png 240w,"
+  }
+}

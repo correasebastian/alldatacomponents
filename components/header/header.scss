@@ -1,0 +1,23 @@
+/**
+ *  Main css for Header
+ */
+
+.cmp-header {
+    color: $blue;
+
+    .navbar-link:not(.is-arrowless)::after {
+        right: 2.025em;
+        font-size: 0.7rem;
+        margin-top: -0.475em;
+    }
+
+    .cmp-header__nav-setup {
+        nav{
+            z-index: 32;
+        }
+
+        ul {
+            justify-content: flex-end;
+        }
+    }
+}

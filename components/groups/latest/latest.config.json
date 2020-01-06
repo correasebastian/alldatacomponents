@@ -1,0 +1,29 @@
+{
+  "title": "latest component",
+  "context": {
+    "heading": "see the latest",
+    "btnText": "see this month's issue of alldata news",
+    "cards": [
+      {
+        "latestTitle": "News",
+        "latestLink": "see all news",
+        "src": "/images/carfix.jpg",
+        "heading": "Five ways technology can help your dealership service",
+        "headingLevel": "h6",
+        "text": "At the NIADA Convention and Expo, George Verkamp (shown above), Vice President of Sales & Business Development at ALLDATA...",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com"
+      }, 
+      {
+        "latestTitle": "Teach tips",
+        "latestLink": "See all tips",
+        "src": "/images/carfix.jpg",
+        "heading": "Five ways technology can help your dealership service",
+        "headingLevel": "h6",
+        "text": "At the NIADA Convention and Expo, George Verkamp (shown above), Vice President of Sales & Business Development at ALLDATA...",
+        "textLink" : "Learn More",
+        "link" : "https://www.google.com"
+      }
+    ]
+  }
+}

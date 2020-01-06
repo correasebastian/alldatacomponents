@@ -1,0 +1,81 @@
+/**
+ *  Main css for Testimonial
+ */
+
+.cmp-testimonial {
+    display: flex;
+    justify-content: center;
+
+    .cmp-testimonial-inner {
+
+        .cmp-slider {
+            .cmp-slider-controls {
+                padding-left: $oneColumn * 1vw;
+            }
+        }
+        
+
+        @include media-breakpoint-down(sm) {
+
+            .cmp-slider {
+                .cmp-slider-controls {
+                    padding-right: $oneColumn * 1vw;
+                }
+                .carousel-indicators {
+                    flex: 1 1 auto;
+                    display: flex;
+
+                    li {
+                        flex: 1;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .cmp-testimonial-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .cmp-text {
+            margin-top: fromPxtoRem(47);
+            margin-bottom: fromPxtoRem(23);
+        }
+
+        @include media-breakpoint-down(md) {
+            .cmp-button {
+                margin-bottom: fromPxtoRem(47);
+            }
+        }
+    }
+
+
+    @include media-breakpoint-up(md) {
+
+        .cmp-testimonial-inner {
+            width: 76%;
+
+            .cmp-slider-controls {
+                justify-content: start;
+                left: 50%;
+                bottom: 6vw;
+            }
+
+        }
+
+        .cmp-testimonial-footer {
+            align-items: flex-end;
+            text-align: right;
+
+            .cmp-text {
+                max-width: 24vw;
+                margin-top: fromPxtoRem(27);
+                margin-bottom: fromPxtoRem(55);
+            }
+        }
+    }
+}

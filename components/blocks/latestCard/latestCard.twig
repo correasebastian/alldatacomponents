@@ -1,0 +1,21 @@
+<div class="cmp-latestcard">
+    {% include "@latestheading" %}
+    <div class="cmp-latestcard-content">
+        <div class="cmp-latestcard__image ">
+            <div class="d-none d-md-block">
+                {% include "@imageblue" %}
+            </div>
+            <div class="d-md-none">
+                {% include "@image" %}
+            </div>
+        </div>
+        <div class="cmp-latestcard__content">
+            {% include "@heading" %}
+            <span class="cmp-latestcard__more">
+                <img src={{ '/images/plus-orange.svg' | path }} alt="more">
+            </span>
+            {% include "@simpletext" %}
+            {% include "@cardlink" %}
+        </div>
+    </div>
+</div>

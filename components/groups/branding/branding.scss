@@ -1,0 +1,27 @@
+/**
+ *  Main css for Branding
+ */
+
+.cmp-branding {
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+    .cmp-cols {
+        // there is not such a last of class so we use div
+
+        >div:last-child {
+            .cmp-brandingcard__line {
+                display: none;
+            }
+        }
+    }
+
+    @include  media-breakpoint-up(lg){
+        .cmp-brandingcard__line {
+            display: none;
+        }
+    }
+
+}

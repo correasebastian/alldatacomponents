@@ -1,0 +1,18 @@
+
+
+{% set columContent %}
+  {# <h4>columncontent</h4> #}
+    {% include "@jumbo" %}  
+{% endset %}
+
+{% set skewContent %}
+
+  {% include "@tricolor--position" %}
+  <div class="cmp-hero py-4 px-4">
+    {% include "@cols" with {content : columContent, mobileModifier: "1", tabletModifier: "2", } only %}
+  </div>
+{% endset %}
+
+{% include "@skew" with {content: skewContent } %}
+
+{# {{content}} #}

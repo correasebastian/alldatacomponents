@@ -1,0 +1,7 @@
+{
+  "title": "<%= componentNameDashed %> component",
+  "context": {
+    "text": "This is an <%= componentNameDashed %> component!",
+    "heading": "My heading"
+  }
+}

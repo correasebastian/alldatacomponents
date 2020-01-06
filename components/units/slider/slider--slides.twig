@@ -1,0 +1,23 @@
+
+{% set count = models|length %}
+{% set carouselId = "carouselDyn" %}
+{% set extraData = {classes: "d-block w-100"} %}
+{% if models|length > 0 %}
+    {% set slides %}
+        {% for model in models %}
+            {% if extraData %}
+                {% set model = model|merge(extraData) %}
+            {% endif %}
+            {% set slideContent %}
+                    {# <img class="d-block w-100" src="{{model}}" alt="First slide"> #}
+                    {# {% include "@" ~ template with {src: model.src, classes: "d-block w-100"} %} #}
+                    {% include "@" ~ template with model only %}
+            {% endset %}
+            {% include "@slider--slide" with {slideContent : slideContent, active: loop.first } %}
+        {% endfor %}
+    {% endset %}
+
+    {% include "@slider--dyn" with {count: count, slides : slides} %}
+    {# {{slides}} #}
+{% endif %}
+

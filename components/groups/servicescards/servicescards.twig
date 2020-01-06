@@ -1,0 +1,23 @@
+{% set skewContent %}
+    <div class="cmp-servicescards">
+        {% include "@tricolor--position" with {inverted: true}%}
+        {% include "@jumbo" with 
+            {
+                "headingLevel": "h2",
+                "btnText": "",
+                "threelines": true,
+                "modifier": "No Button and no simple text"
+            } 
+        %}
+        <div class="cmp-servicescards__cardcontainer mx-sm-auto">
+            {% for card in cards %}
+                {% include "@servcard" with card %}
+            {% endfor %}
+        </div>
+     
+        
+    </div>
+{% endset %}
+        
+
+{% include "@skew" with {content: skewContent, overflowUnset: true, inlineBgImage: inlineBgImage} %}

@@ -1,0 +1,45 @@
+/**
+ *  Main css for LatestHeading
+ */
+
+.cmp-latestHeading {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  .heading-title {
+    color: white;
+    float: left;
+  }
+
+  .heading-link {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #f16824;
+    color: white;
+    float: right;
+    font-weight: bold;
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+  }
+
+  .heading-link:hover {
+    text-decoration: none;
+  }
+    
+  @include  media-breakpoint-up(lg) {
+    .heading-link {
+      border-bottom: none;
+    }
+  
+    .heading-link:hover {
+      cursor: pointer;
+      border-bottom: 2px solid #f16824;
+    }
+  }
+}

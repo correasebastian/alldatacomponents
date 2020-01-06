@@ -1,0 +1,14 @@
+{
+  "title": "whatwedo component",
+  "context": {
+    "inlineBgImage": "/images/carfix2.jpg",
+    "jumboContent":
+    {
+      "heading": "WHA WE DO",
+      "headingLevel": "h2",
+      "btnText": "About Us",
+      "threelines": true,
+      "text" : "We are a <strong>data-driven solutions provider</strong> working <strong>hard</strong> and <strong>smart</strong> to help automotive repair shops be the <strong>best they can be</strong>."
+    }
+  }
+}

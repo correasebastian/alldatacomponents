@@ -1,0 +1,17 @@
+{% import '@unitmacros' as output %}
+
+{% set spaceObj = {py:'py-4',pyLg:'py-lg-4', pxLg:'px-lg-4' } %}
+
+<div class="cmp-brandingcard text-center {{output.getSpaces(spaceObj)}} {% if textColor %} text-{{textColor}}{% endif %} {% if backgroundColor %} bg-{{backgroundColor}}{% endif %}">
+
+{# by default boostrap has white and black --> text-white , text-black #}
+    {# <img src="/images/mechanic.svg" class="Fill-4"> #}
+
+    {% set sizes = "(max-width:767px) 25vw,(min-width:768px) 10vw" %}
+    {% include "units/image/image.twig" %}
+    {% include "units/heading/heading.twig" %}
+    {% include "units/simpletext/simpletext.twig" %}
+
+    <hr class="cmp-brandingcard__line">
+</div>
+

@@ -1,0 +1,20 @@
+
+<div class="cmp-whatwedo">
+    <div class="cmp-whatwedo__bgdesk d-none d-lg-block">
+        {% set skewContent %}
+            {% include "@tricolor--position" with {inverted: true} %}
+        {% endset %}
+        {% include "@skew" with {content: skewContent, inlineBgImage: inlineBgImage, overflowUnset: true} %}
+    </div>
+    <div class="cmp-whatwedo__bgmobile d-lg-none">
+        {% set skewContent %}
+            <div class="cmp-whatwedo__mob-bluefilter"></div>
+        {% endset %}
+        {% include "@skew" with {content: skewContent, skewClass : "skew-8"} %}
+    </div>
+    <div class="cmp-whatwedo__about-us">
+        {% include "@jumbo" with jumboContent %}
+    </div>
+</div>
+
+

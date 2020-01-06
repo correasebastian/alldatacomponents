@@ -1,0 +1,23 @@
+/**
+ *  Main css for Hero
+ */
+
+ $bsGap: 15px;
+
+.cmp-hero {
+    padding-top: fromPxtoRem(93);
+    padding-left: 1.5rem ;
+    padding-right: 1.5rem ;
+    @extend .skew-padding-bottom-6;
+
+    .cmp-slider{
+        padding-bottom: fromPxtoRem(110);
+        .cmp-slider-controls {
+            justify-content: start ;
+            margin-left: $bsGap
+        }
+
+    }
+
+}
+

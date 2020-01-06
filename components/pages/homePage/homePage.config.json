@@ -1,0 +1,8 @@
+{
+  "title": "homePage component",
+  "context": {
+    "hero": "@hero--slider",
+    "branding": "@branding",
+    "testimonial": "@testimonial--overlap"
+  }
+}
