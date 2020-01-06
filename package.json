@@ -21,7 +21,7 @@
   },
   "scripts": {
     "prestartdev": "cp _preview.twig ./components/_preview.twig && npm run cpimages",
-    "cpimages": "cp -r ./assets/images/ ./public/images/",
+    "cpimages": "mkdir -p public/images && cp -r ./assets/images/ ./public/images/",
     "startdev": "npm-run-all --parallel dev:* -r",
     "commonbuild": "npm run prod:1 && npm run prod:preview ",
     "build": "npm run commonbuild && npm run prod:cpheroku",
@@ -40,8 +40,8 @@
     "prod:cpheroku": "cp -rv assets/images/ public/",
     "build_assets_prod": "find public/assets | grep -E '.*\\.bundle\\..*$' | xargs rm; npm run build_styles_prod & npm run build_scripts_prod",
     "build_assets_dev": "find public/assets | grep -E '.*\\.bundle\\..*$' | xargs rm; npm run build_styles_dev & npm run build_scripts_dev",
-    "predeploy":"npm run static:build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run static:build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {},
   "engines": {
