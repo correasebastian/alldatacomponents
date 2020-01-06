@@ -1,27 +1,31 @@
 {
   "name": "first-test",
   "version": "0.1.0",
+  "homepage": "https://github.alldata.com/dev/alldata_components",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "@frctl/fractal": "^1.2.0",
+    "@frctl/twig": "^1.0.0-beta.5",
+    "autoprefixer": "^9.6.5",
     "bootstrap": "^4.4.1",
     "bulma": "^0.8.0",
     "copyfiles": "^2.1.1",
     "cross-env": "^6.0.3",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.0",
-    "@fortawesome/fontawesome-free": "^5.12.0",
-    "@frctl/twig": "^1.0.0-beta.5",
-    "autoprefixer": "^9.6.5",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
+    "popper.js": "^1.16.0",
     "renamer": "^1.1.4",
     "sass": "^1.23.1"
   },
   "scripts": {
-    "prestartdev": "cp _preview.twig ./components/_preview.twig && cp -r ./assets/images/ ./public/images/",
+    "prestartdev": "cp _preview.twig ./components/_preview.twig && npm run cpimages",
+    "cpimages": "cp -r ./assets/images/ ./public/images/",
     "startdev": "npm-run-all --parallel dev:* -r",
-    "build": "npm run prod:1 && npm run prod:preview && npm run prod:cp ",
-    "static:build":"npm run build && fractal build",
+    "commonbuild": "npm run prod:1 && npm run prod:preview ",
+    "build": "npm run commonbuild && npm run prod:cpheroku",
+    "static:build": "npm run commonbuild && npm run cpimages && fractal build",
     "start": "fractal start -p $PORT ",
     "prod:1": "parcel build _previewprod.html --out-dir public/",
     "prod:preview": "cp  public/_previewprod.html ./components/_preview.twig",
@@ -32,14 +36,16 @@
     "debug:chrome": "node --inspect --inspect-brk node_modules/.bin/fractal start",
     "prod:css": "parcel build styles/homePage/index.css --out-dir public/assets --out-file global.css --no-source-maps",
     "prod:js": "parcel build scripts/homePage/index.js --out-dir public/assets --out-file index.js --no-source-maps",
-    "preprod:cp": "mkdir -p public/images ",
-    "prod:cp": "cp -rv assets/images/ public/",
+    "preprod:cpheroku": "mkdir -p public/images ",
+    "prod:cpheroku": "cp -rv assets/images/ public/",
     "build_assets_prod": "find public/assets | grep -E '.*\\.bundle\\..*$' | xargs rm; npm run build_styles_prod & npm run build_scripts_prod",
-    "build_assets_dev": "find public/assets | grep -E '.*\\.bundle\\..*$' | xargs rm; npm run build_styles_dev & npm run build_scripts_dev"
+    "build_assets_dev": "find public/assets | grep -E '.*\\.bundle\\..*$' | xargs rm; npm run build_styles_dev & npm run build_scripts_dev",
+    "predeploy":"npm run static:build",
+    "deploy":"gh-pages -d build"
   },
-  "devDependencies": {
-   
+  "devDependencies": {},
+  "engines": {
+    "node": ">=8.12.0"
   },
-   "engines" : { "node" : ">=8.12.0" } ,
-   "engineStrict" : true 
+  "engineStrict": true
 }
