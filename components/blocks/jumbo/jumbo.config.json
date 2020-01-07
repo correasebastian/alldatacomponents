@@ -10,41 +10,21 @@
   "variants":[
     {"name": "No three lines",
       "context": {
-        "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
-        "heading": "AUTOMOTIVE INTELLIGENCE",
-        "headingLevel": "h1",
-        "btnText": "shop products",
         "threelines": false
       }
     },
     {"name": "No Button",
       "context": {
-        "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
-        "heading": "AUTOMOTIVE INTELLIGENCE",
-        "headingLevel": "h1",
-        "btnText": "",
-        "threelines": true
+        "btnText": ""
       }
     },
     {"name": "No Button and no Three lines",
       "context": {
-        "text": "From providing shop management software to customer communication tools, we've been the industry leader of OEM auto repair software since 1986.",
-        "heading": "AUTOMOTIVE INTELLIGENCE",
-        "headingLevel": "h1",
+       
         "btnText": "",
         "threelines": false
       }
-    }
-    ,
-    {"name": "No Button and no simple text",
-      "context": {
-        "text": "",
-        "heading": "Who we serve",
-        "btnText": "",
-        "threelines": true
-      }
-    }
-    ,
+    },
     {"name": "simple",
       "context": {
         "heading": "Why ALLDATA",
