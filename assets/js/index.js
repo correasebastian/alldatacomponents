@@ -1,4 +1,4 @@
-
+import '../favicon.ico'
 import './bootstrap'
 import '../../components/header/header';
 import '../../components/units/button/button';
