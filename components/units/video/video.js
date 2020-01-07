@@ -1,5 +1,6 @@
 'use strict';
-
+import $ from 'jquery'
+import Plyr from 'plyr'
 /**
  *  This is the main file for Video
  */
@@ -13,3 +14,8 @@ class Video {
 }
 
 */
+
+$(function(){
+    // const player = new Plyr()
+    const player = new Plyr('#player');
+})
