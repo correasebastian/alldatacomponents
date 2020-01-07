@@ -13,6 +13,10 @@ const twigAdapter = require('@frctl/twig')();
 
 var isProd = process.env.NODE_ENV === 'production'
 
+var auth = require('http-auth');
+
+
+
 fractal.components.engine(twigAdapter);
 fractal.components.set('ext', '.twig');
 fractal.components.set('default.preview','@preview' /* isProd ? '@previewprod' :'@preview' */);
@@ -39,3 +43,11 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 
 
 fractal.web.set('builder.dest', __dirname + '/build');
+
+if(isProd ){
+    fractal.web.set('auth', {
+        user:'born',
+        pass: 'alldata'
+    }); 
+
+}
