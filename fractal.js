@@ -24,7 +24,7 @@ fractal.components.set('default.preview','@preview' /* isProd ? '@previewprod' :
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'First Test');
+fractal.set('project.title', 'alldata components');
 
 /*
  * Tell Fractal where to look for components.
