@@ -21,3 +21,82 @@
         }
     }
 }
+
+.cmp-header-mobile__nav-setup {
+    background: white;
+    display: none;
+    overflow: hidden;
+    position: absolute; 
+    top: 0; 
+    right: 0;  
+    left: 0;
+    width: 0;
+    transition: 0.5s;
+
+    ul {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-dropdown {
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .navbar-menu {
+        width: 100%;
+    }
+
+    .menu-head {
+        height: 0;
+        padding: 24px;
+
+        .close-menu, .menu-back {
+            font-size: 40px;
+            margin-top: -30px;
+        }
+
+        .close-menu {
+            float: right;
+        }
+
+        .menu-back {
+            float: left;
+        }
+    }
+
+    .main-navbar-item, .secondary-navbar-item, .submenu-navbar-item, .lastLevel-navbar-item, .secondary-dropdown-item {
+        list-style: none;
+        border-bottom: 1px solid rgb(241, 241, 241);
+        font-size: 14px;
+        padding: 24px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .lastLevel-navbar-item, .secondary-dropdown-item {
+        font-weight: 300;
+        padding-left: 64px;
+        color: #54565a;
+    }
+
+    .submenu-navbar {
+        background: white;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        .lastLevel-navbar {
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+    }
+}

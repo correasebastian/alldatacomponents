@@ -4,10 +4,81 @@
     "text": "This is an header component!",
     "heading": "My heading",
     "menus":[
-      {"url":"/PRODUCTS","name": "PRODUCTS" , "submenus":[]},
-      {"url":"/SUPPORT","name": "SUPPORT" , "submenus":[]},
-      {"url":"/RESOURCES","name": "RESOURCES" , "submenus":[]},
-      {"url":"/ABOUT US","name": "ABOUT US" , "submenus":[]},
+      {"url":"/PRODUCTS","name": "PRODUCTS" , "submenus":[
+        {"name": "Repair Information", "submenus":[
+          "ALLDATA Repair", 
+          "ALLDATA Collision", 
+          "ALLDATA Mobile"
+        ]},
+        {"name": "Diagnostics", "submenus":[
+          "ALLDATA Manage Onlie",
+          "ALLDATA Diagnostics",
+          "ALLDATA Tech-Assist"
+        ]},
+        {"name": "shop management", "submenus":[
+          "ALLDATA Manage Onlie",
+          "ALLDATA Titan"
+        ]},
+        {"name": "What's Right For My Shop", "submenus":[]},
+        {"name": "Testimonials", "submenus":[]}
+      ]},
+      {"url":"/SUPPORT","name": "SUPPORT" , "submenus":[
+        {"name": "Popular Topics", "submenus":[
+          "Getting Started",
+          "Recover User Name or Password",
+          "Vehicle Information Request",
+          "Login Center"
+        ]},
+        {"name": "product support", "submenus":[
+          "ALLDATA Repair",
+          "ALLDATA Collision",
+          "ALLDATA Mobile",
+          "ALLDATA Manage Onlie",
+          "ALLDATA Diagnostics",
+          "ALLDATA Tech-Assist"
+        ]},
+        {"name": "Account & billing support", "submenus":[
+          "Billing Options",
+          "Account Options"
+        ]},
+        {"name": "Training & certifications", "submenus":[
+          "Product Training",
+          "Traninig Videos",
+          "On-Demand Webinars",
+          "CAIS Certificaiton Program"
+        ]}
+      ]},
+      {"url":"/RESOURCES","name": "RESOURCES" , "submenus":[
+        {"name": "product resources", "submenus":[
+          "ALLDATA Repair",
+          "ALLDATA Collision",
+          "ALLDATA Mobile",
+          "ALLDATA Manage Onlie",
+          "ALLDATA Diagnostics",
+          "ALLDATA Tech-Assist"
+        ]},
+        {"name": "ALLDATA news by topic", "submenus":[
+          "General Auto Repair",
+          "Collision Auto Repair",
+          "Shop Management",
+          "Best Practices",
+          "Training",
+          "News",
+          "Events"
+        ]},
+        {"name": "ALLDATA News", "submenus":[
+          "Latest Edition"
+        ]},
+        {"name": "Tech Tips", "submenus":[]},
+        {"name": "Industry Webinars", "submenus":[]}
+      ]},
+      {"url":"/ABOUT US","name": "ABOUT US" , "submenus":[
+        {"name": "ALLDATA LEADERSHIP"},
+        {"name": "PARNERS"},
+        {"name": "PRESS"},
+        {"name": "CARRERS"},
+        {"name": "CONTACT"}
+      ]},
       {"url":"/BUY NOW","name": "BUY NOW" , "submenus":[]}
     ],
     "menusSetup":[
@@ -15,7 +86,7 @@
       {"url":"/rep","name": "CONTACT A REP" , "submenus":[]},
       {"url":"/RESOURCES","name": "US" , "submenus":["Canada", "Europe", "Mexico", "US" ]},
       {"url":"/ABOUT US","name": "ENGLISH" , "submenus":[]},
-      {"url":"/login","name": "BUY NOW" , "submenus":[]}
+      {"url":"/login","name": "LOGIN" , "submenus":[]}
     ]
   }
 }
