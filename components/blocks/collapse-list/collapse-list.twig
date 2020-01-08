@@ -1,0 +1,26 @@
+
+<div class="cmp-collapse-list">
+    <div class="cmp-collapse-list__title">
+        {{listTitle}}
+        <button class="cmp-collapse-list-button__show-more  d-lg-none">
+            {% include "@image" with {src:"/images/list_more.svg",alt:"show more"} %}
+        </button>
+        <button class="cmp-collapse-list-button__show-less  d-none d-lg-none">
+            {% include "@image" with {src:"/images/list_close.svg",alt:"show less"} %}
+        </button>
+    </div>
+    <div class="cmp-collapse-list__content list-closed" aria-hidden="true" aria-expanded="false">
+        <ul>
+            {% for content in listContents %}
+                <li>
+                    {% if content.listLink %}
+                    <a href="{{content.listLink}}">{{content.listText}}</a>
+                    {% else %}
+                    {{content.listText}}
+                    {% endif %}
+                </li> 
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
