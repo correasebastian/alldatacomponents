@@ -1,0 +1,67 @@
+/**
+ *  Main css for Collapse List
+ */
+
+.cmp-collapse-list {
+  width: 300px;
+  background-color: #1b3e6f;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+  &__title{
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  &__content{
+    font-weight: 300;
+    line-height: 1.14;
+    // transition: max-height 0.3s;
+    overflow: hidden;
+    height: auto;
+    max-height: 1000px;
+    ul{
+      padding: 0;
+    }
+    li{
+      list-style: none;
+      margin-bottom: 20px;
+      
+    }
+    a{
+      color: white;
+    }
+    a:hover{
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .cmp-collapse-list-button{
+    &__show-more, &__show-less{
+      display: inline-block;
+      float: right;
+      border: none;
+      background: none;
+    }
+  }
+
+  .list-closed{
+    height: 0px;
+    max-height: 0px;
+  }
+}
+
+@include  media-breakpoint-up(lg){
+
+  .cmp-collapse-list {
+
+    .list-closed{
+      height: auto;
+      max-height: 1000px;
+    }
+
+  }
+}

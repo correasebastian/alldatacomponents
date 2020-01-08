@@ -1,0 +1,32 @@
+
+<div class="cmp-footer">
+    <div class="cmp-footer__main row">
+        <div class="cmp-footer__main-lists-continer card-columns col-lg-8">
+            {% for menu in footerMenu %}
+                {% include "@collapse-list" with menu %}
+            {% endfor %}
+        </div>
+       
+        <div class="cmp-footer__main-social col-lg-3">
+            {% include "@simpletext" with {text:singUpMessage} %}
+            <img src="{{'/images/updateArrow.svg' |path}}" alt="Sing Up">
+             {% if socialMedia %}
+             <div class="cmp-footer__social-media">
+                {% include "@simpletext" with {text:"Follow Us"} %}
+                {% for media in socialLinks %}
+                    {% if media.mediaAvaliable %}
+                       <a href="{{media.link}}">{% include "@image" with {src:media.logo,alt: media.message} %}</a>
+                    {% endif %}
+                {% endfor %}
+             </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="cmp-footer__secondary">
+        <ul>
+            {% for item in subfooterList %}
+            <li class="mr-lg-5"><a href="{{item.link}}">{{item.text}}</a></li>
+            {% endfor %}
+        </ul>
+    <div>
+</div>

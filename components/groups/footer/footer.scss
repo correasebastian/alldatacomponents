@@ -1,0 +1,89 @@
+/**
+ *  Main css for Footer
+ */
+
+.cmp-footer {
+  color: white;
+  
+  &__main{
+    padding: 40px 20px;
+    background-color: #1b3e6f;
+
+    .cmp-footer__main-lists-continer.card-columns{
+      column-count: 1;
+      margin-bottom: 50px;
+    }
+  }
+  &__secondary{
+    background-color: #1d3359; 
+  }
+  &__main-social{
+    font-size: 14px;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+    .cmp-text{
+      width: 280px;
+      display: inline-block;
+    }
+  }
+  &__social-media{
+    margin-top: 25px;
+    .cmp-text{
+      width: 100%;
+
+    }
+  }
+  &__secondary{
+    padding: 40px 0px 15px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    ul{
+      padding: 0px;
+      margin: 0px;
+    }
+    li{
+      list-style: none;
+      margin-bottom: 25px;
+      
+    }
+    a{
+      color: white;
+    }
+    a:hover{
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+  }
+}
+
+@include  media-breakpoint-up(lg){
+  .cmp-footer {
+    &__main{
+      .cmp-footer__main-lists-continer.card-columns{
+        column-count: 4;
+        margin-bottom: 0px;
+        .cmp-collapse-list{
+          display: inline-block;
+          .cmp-collapse-list__title{
+            margin-bottom: 20px;
+          }
+          .cmp-collapse-list__content li{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    &__secondary{
+      padding: 20px 40px 40px;
+      text-align: left;
+      
+      li {
+        margin-bottom: 0;
+        float: left;
+      }
+    }
+  }
+
+}

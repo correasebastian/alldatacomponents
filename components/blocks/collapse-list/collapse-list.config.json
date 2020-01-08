@@ -1,0 +1,36 @@
+{
+  "title": "collapse-list component",
+  "context": {
+    "listTitle": "Products",
+    "listContents": [
+      {
+        "listText": "ALLDATA Repair",
+        "listLink": "www.google.com"
+      },
+      {
+        "listText": "ALLDTA Collision",
+        "listLink": "www.google.com"
+      },
+      {
+        "listText": "ALLDATA Mobile",
+        "listLink": "www.google.com"
+      },
+      {
+        "listText": "ALLDATA Diagnostics",
+        "listLink": "www.google.com"
+      },
+      {
+        "listText": "ALLDATA Tech-Assits",
+        "listLink": "www.google.com"
+      },
+      {
+        "listText": "ALLDATA Manage Online",
+        "listLink": "www.google.com"
+      },
+      {
+        "listText": "ALLDATA Shop Manager",
+        "listLink": "www.google.com"
+      }
+    ]
+  }
+}

@@ -29,3 +29,5 @@ import '../../components/blocks/latestCard/latestCard';
 import '../../components/units/latestHeading/latestHeading';
 import '../../components/groups/whatwedo/whatwedo';
 import '../../components/units/video/video';
+import '../../components/groups/footer/footer';
+import '../../components/blocks/collapse-list/collapse-list';

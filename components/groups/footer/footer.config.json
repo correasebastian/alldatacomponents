@@ -1,0 +1,196 @@
+{
+  "title": "footer component",
+  "context": {
+    "footerMenu": [
+      {
+        "listTitle": "Products",
+        "listContents": [
+          {
+            "listText": "ALLDATA Repair"
+          },
+          {
+            "listText": "ALLDTA Collision",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA Mobile",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA Diagnostics",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA Tech-Assits",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA Manage Online",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA Shop Manager",
+            "listLink": "www.google.com"
+          }
+        ]
+      },
+      {
+        "listTitle": "Support",
+        "listContents": [
+          {
+            "listText": "Popular Topics",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Product Support",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Account Support",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Training & Certificacions",
+            "listLink": "www.google.com"
+          }
+        ]
+      },
+      {
+        "listTitle": "Resources",
+        "listContents": [
+          {
+            "listText": "Product Resources",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Teach tips",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA News",
+            "listLink": "www.google.com"
+          }
+        ]
+      },
+      {
+        "listTitle": "About Us",
+        "listContents": [
+          {
+            "listText": "Partners ",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Press",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Carrers",
+            "listLink": "www.google.com"
+          }
+        ]
+      },
+      {
+        "listTitle": "Contact us",
+        "listContents": [
+          {
+            "listText": "800-697-2533",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Email Customer Support",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "Request a Demo ",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "More Options",
+            "listLink": "www.google.com"
+          }
+        ]
+      },
+      {
+        "listTitle": "Related sites",
+        "listContents": [
+          {
+            "listText": "ALLDATA Mexico",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDTA Canada",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA Europe",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "ALLDATA DIY",
+            "listLink": "www.google.com"
+          },
+          {
+            "listText": "AutoZone",
+            "listLink": "www.google.com"
+          }
+        ]
+      }
+    ],
+    "singUpMessage" : "Sign up to receive email updates ",
+    "socialMedia": true,
+    "socialLinks": [
+      {
+        "mediaAvaliable": true,
+        "link": "www.youtube.com",
+        "logo" : "/images/socialyt.svg",
+        "message" : "visit our channel!"
+      },
+      {
+        "mediaAvaliable": false,
+        "link": "www.facebook.com",
+        "logo" : "/images/socialfb.svg",
+        "message" : "visit our channel!"
+      },
+      {
+        "mediaAvaliable": true,
+        "link": "www.linkedin.com",
+        "logo" : "/images/sociallink.svg",
+        "message" : "visit our channel!"
+      },
+      {
+        "mediaAvaliable": true,
+        "link": "www.twitter.com",
+        "logo" : "/images/socialtw.svg",
+        "message" : "visit our channel!"
+      },
+      {
+        "mediaAvaliable": true,
+        "link": "www.instagram.com",
+        "logo" : "/images/socialins.svg",
+        "message" : "visit our channel!"
+      }
+    ],
+    "subfooterList" : [
+      {
+        "text": "© 2019 ALLDATA",
+        "link": "link"
+      },
+      {
+        "text": "An <strong>AutoZone</strong> Company",
+        "link": "link"
+      },
+      {
+        "text": "Trademarks",
+        "link": "link"
+      },
+      {
+        "text": "Terms of Use",
+        "link": "link"
+      },
+      {
+        "text": "Privacy Policy",
+        "link": "link"
+      }
+    ]
+  }
+}
