@@ -4,6 +4,7 @@
     "hero": "@hero--slider",
     "branding": "@branding",
     "testimonial": "@testimonial--overlap",
-    "latest": "@latest"
+    "latest": "@latest",
+    "footer": "@footer"
   }
 }

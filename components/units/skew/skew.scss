@@ -3,189 +3,176 @@
  */
 
 .cmp-skew {
-    // border: red solid 1px;
-    min-height: 300px;
-    background-color: lightblue;
-    overflow-x: hidden;
+  // border: red solid 1px;
+  min-height: 300px;
+  background-color: lightblue;
+  overflow-x: hidden;
 
-    &.bg-transparent{
-        background-color: transparent;
-    }
-    > .cmp-image{
-        position: absolute;
-        @extend .img-fluid;
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+  &.bg-transparent {
+    background-color: transparent;
+  }
+  > .cmp-image {
+    position: absolute;
+    @extend .img-fluid;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
-.overflow-unset{
-    overflow: unset;
+.overflow-unset {
+  overflow: unset;
 }
 
 /**
  *  Main css for Section
  */
 
+$pi: 3.14159265359;
+$_precision: 10;
 
- $pi: 3.14159265359;
- $_precision: 10;
- 
- @function pow($base, $exp) {
-     $value: $base;
- 
-     @if $exp>1 {
-         @for $i from 2 through $exp {
-             $value: $value * $base;
-         }
-     }
- 
-     @if $exp < 1 {
-         @for $i from 0 through -$exp {
-             $value: $value / $base;
-         }
-     }
- 
-     @return $value;
- }
- 
- @function fact($num) {
-     $fact: 1;
- 
-     @if $num>0 {
-         @for $i from 1 through $num {
-             $fact: $fact * $i;
-         }
-     }
- 
-     @return $fact;
- }
- 
- @function _to_unitless_rad($angle) {
-     @if unit($angle)=="deg" {
-         $angle: $angle / 180deg * $pi;
-     }
- 
-     @if unit($angle)=="rad" {
-         $angle: $angle / 1rad;
-     }
- 
-     @return $angle;
- }
- 
- @function sin($angle) {
-     $a: _to_unitless_rad($angle);
-     $sin: $a;
- 
-     @for $n from 1 through $_precision {
-         $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1)) * pow($a, (2 * $n + 1));
-     }
- 
-     @return $sin;
- }
- 
- @function cos($angle) {
-     $a: _to_unitless_rad($angle);
-     $cos: 1;
- 
-     @for $n from 1 through $_precision {
-         $cos: $cos + (pow(-1, $n) / fact(2*$n)) * pow($a, 2*$n);
-     }
- 
-     @return $cos;
- }
- 
- @function tan($angle) {
-     @return sin($angle) / cos($angle);
- }
- 
- .cmp-section {
-     min-height: 300px;
-     // width: 400px;
-     max-width: 100vw;
- 
-     .inner-section {
-         border: red solid 1px;
-     }
- }
- 
- .bg-blue {
-     background-color: lightblue;
- }
- 
- .skew-30 {
-     transform: skewY(30deg);
- }
- 
- // degrees
- @for $i from 1 through 20 {
- 
-     $deg : $i * 1deg;
-     $tan : tan($deg);
-     $hb : $tan * (100/2) * 1vw;
-     .skew-#{$i} {
-         
-         
-         // if we wnat to move it down to compensar el skew
-         transform: skewY($deg) translateY($hb);
-         // where to start the inner content
-         padding-top: $hb;
-         padding-bottom: $hb;
-         .inner-section {
-             transform: skewY(-1 * $deg);
-         }
- 
-         &.overlap-prev-section{
-             transform: skewY($deg) translateY($hb * -1);
-         }
- 
-     }
- 
-     @include  media-breakpoint-up(md){
- 
-         .skew-md-#{$i} {
-         
-         
-             // if we wnat to move it down to compensar el skew
-             transform: skewY($deg) translateY($hb);
-             // where to start the inner content
-             padding-top: $hb;
-             padding-bottom: $hb;
-             .inner-section {
-                 transform: skewY(-1 * $deg);
-             }
-     
-             &.overlap-prev-section{
-                 transform: skewY($deg) translateY($hb * -1);
-             }
-     
-         }
- 
-     }
- 
- 
- 
-     .overlap-next-#{$i}{
-         + .cmp-skew{
-             // if we wnat to move it down to compensar el skew
-             transform: skewY($deg) translateY($hb * -1);
-             // where to start the inner content
-             padding-top: $hb;
-             padding-bottom: $hb;
-             .inner-section {
-                 transform: skewY(-1 * $deg);
-             }
-         }
- 
-     }
- 
-     .skew-padding-bottom-#{$i}{
-         padding-bottom: $hb * 2;
-     }
- }
+@function pow($base, $exp) {
+  $value: $base;
 
- .overlap-prev-section-y{
-    transform: translateY(-5.2552117633vw *2);
- }
+  @if $exp>1 {
+    @for $i from 2 through $exp {
+      $value: $value * $base;
+    }
+  }
+
+  @if $exp < 1 {
+    @for $i from 0 through -$exp {
+      $value: $value / $base;
+    }
+  }
+
+  @return $value;
+}
+
+@function fact($num) {
+  $fact: 1;
+
+  @if $num>0 {
+    @for $i from 1 through $num {
+      $fact: $fact * $i;
+    }
+  }
+
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+    $angle: $angle / 180deg * $pi;
+  }
+
+  @if unit($angle) == "rad" {
+    $angle: $angle / 1rad;
+  }
+
+  @return $angle;
+}
+
+@function sin($angle) {
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+
+  @for $n from 1 through $_precision {
+    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1)) * pow($a, (2 * $n + 1));
+  }
+
+  @return $sin;
+}
+
+@function cos($angle) {
+  $a: _to_unitless_rad($angle);
+  $cos: 1;
+
+  @for $n from 1 through $_precision {
+    $cos: $cos + (pow(-1, $n) / fact(2 * $n)) * pow($a, 2 * $n);
+  }
+
+  @return $cos;
+}
+
+@function tan($angle) {
+  @return sin($angle) / cos($angle);
+}
+
+.cmp-section {
+  min-height: 300px;
+  // width: 400px;
+  max-width: 100vw;
+
+  .inner-section {
+    border: red solid 1px;
+  }
+}
+
+.bg-blue {
+  background-color: lightblue;
+}
+
+.skew-30 {
+  transform: skewY(30deg);
+}
+
+// degrees
+@for $i from 0 through 20 {
+  $deg: $i * 1deg;
+  $tan: tan($deg);
+  $hb: $tan * (100/2) * 1vw;
+  .skew-#{$i} {
+    // if we wnat to move it down to compensar el skew
+    transform: skewY($deg) translateY($hb);
+    // where to start the inner content
+    padding-top: $hb;
+    padding-bottom: $hb;
+    .inner-section {
+      transform: skewY(-1 * $deg);
+    }
+
+    &.overlap-prev-section {
+      transform: skewY($deg) translateY($hb * -1);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .skew-md-#{$i} {
+      // if we wnat to move it down to compensar el skew
+      transform: skewY($deg) translateY($hb);
+      // where to start the inner content
+      padding-top: $hb;
+      padding-bottom: $hb;
+      .inner-section {
+        transform: skewY(-1 * $deg);
+      }
+
+      &.overlap-prev-section {
+        transform: skewY($deg) translateY($hb * -1);
+      }
+    }
+  }
+
+  .overlap-next-#{$i} {
+    + .cmp-skew {
+      // if we wnat to move it down to compensar el skew
+      transform: skewY($deg) translateY($hb * -1);
+      // where to start the inner content
+      padding-top: $hb;
+      padding-bottom: $hb;
+      .inner-section {
+        transform: skewY(-1 * $deg);
+      }
+    }
+  }
+
+  .skew-padding-bottom-#{$i} {
+    padding-bottom: $hb * 2;
+  }
+}
+
+.overlap-prev-section-y {
+  transform: translateY(-5.2552117633vw * 2);
+}
