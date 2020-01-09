@@ -3,7 +3,6 @@
  */
 
 .cmp-latest {
-  background: #004987;
   padding-top: 1.5rem;
   padding-bottom: 8rem;
 
@@ -11,66 +10,67 @@
     color: white;
   }
 
-  .cmp-servcard, .last-card{
+  .cmp-servcard,
+  .last-card {
     width: 475px;
     height: 535px;
     box-shadow: none;
     display: inline-block;
 
-    .cmp-servcard__image{
+    .cmp-servcard__image {
       display: flex;
       width: 100%;
       max-height: 293px;
-     overflow: hidden;
-      .cmp-image{
+      overflow: hidden;
+      .cmp-image {
         width: 100%;
       }
     }
 
-    .cmp-servcard__content{
+    .cmp-servcard__content {
       padding: 30px 40px;
-   
-      .cmp-heading{
-       color: #1b3e6f;
+
+      .cmp-heading {
+        color: #1b3e6f;
       }
-      .cmp-text{
-       font-size: 14px;
-       font-weight: 300;
-       font-stretch: normal;
-       font-style: normal;
-       line-height: 1.71;
-       letter-spacing: normal;
-       color: #54565a;
-       padding-bottom: 15px;
+      .cmp-text {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #54565a;
+        padding-bottom: 15px;
       }
-      .cmp-servcard__more{
+      .cmp-servcard__more {
         display: none;
       }
     }
   }
 
-  .mobile-overflow{
+  .mobile-overflow {
     overflow: visible;
   }
 
-  .last-card{
+  .last-card {
     text-align: left;
-  
-    .cmp-servcard__content .cmp-cardlink{
+
+    .cmp-servcard__content .cmp-cardlink {
       border: 0px;
       padding: 0 0 7px 0;
     }
   }
 
-  .cmp-servcard:hover{
-    box-shadow: 20px 19px 61px -25px rgba(0,0,0,0.27);
+  .cmp-servcard:hover {
+    box-shadow: 20px 19px 61px -25px rgba(0, 0, 0, 0.27);
   }
-  .cmp-servcard:hover .cmp-imageblue .cmp-image{
+  .cmp-servcard:hover .cmp-imageblue .cmp-image {
     opacity: 1;
     transition: 0.3s;
   }
-  
-  .cmp-servcard:hover .cmp-cardlink{
+
+  .cmp-servcard:hover .cmp-cardlink {
     text-decoration: none;
     color: #1b3d6e;
     cursor: pointer;
@@ -86,4 +86,3 @@
     color: white;
   }
 }
-
