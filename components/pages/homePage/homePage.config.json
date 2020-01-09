@@ -3,6 +3,7 @@
   "context": {
     "hero": "@hero--slider",
     "branding": "@branding",
-    "testimonial": "@testimonial--overlap"
+    "testimonial": "@testimonial--overlap",
+    "latest": "@latest"
   }
 }
