@@ -7,7 +7,7 @@
             {% endfor %}
         </div>
        
-        <div class="cmp-footer__main-social col-lg-3">
+        <div class="cmp-footer__main-social col-lg-4 p-lg-0">
             {% include "@simpletext" with {text:singUpMessage} %}
             <img src="{{'/images/updateArrow.svg' |path}}" alt="Sing Up">
              {% if socialMedia %}
@@ -15,7 +15,7 @@
                 {% include "@simpletext" with {text:"Follow Us"} %}
                 {% for media in socialLinks %}
                     {% if media.mediaAvaliable %}
-                       <a href="{{media.link}}">{% include "@image" with {src:media.logo,alt: media.message} %}</a>
+                       <a class="mr-3" href="{{media.link}}">{% include "@image" with {src:media.logo,alt: media.message} %}</a>
                     {% endif %}
                 {% endfor %}
              </div>
