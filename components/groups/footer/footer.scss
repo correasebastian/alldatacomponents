@@ -6,7 +6,9 @@
   color: white;
   
   &__main{
-    padding: 40px 20px;
+    width: 100%;
+    margin: 0;
+    padding: 40px 15px;
     background-color: #1b3e6f;
 
     .cmp-footer__main-lists-continer.card-columns{
@@ -61,6 +63,7 @@
 @include  media-breakpoint-up(lg){
   .cmp-footer {
     &__main{
+      padding: 40px 20px;
       .cmp-footer__main-lists-continer.card-columns{
         column-count: 4;
         margin-bottom: 0px;
