@@ -1,7 +1,7 @@
 'use strict';
 import $ from 'jquery';
 
-$('.navbar-burger, .close-menu').on('click', function () {
+$('.burger-icon, .close-menu').on('click', function () {
     var mobileMenu = $('.cmp-header-mobile__nav-setup');
     var submenu = $('.submenu-navbar');
     
@@ -45,13 +45,16 @@ $('.secondary-navbar-item').on('click', function () {
 });
 
 $('.submenu-navbar-item').on('click', function () {
+    
     var submenu = $(this).next('.lastLevel-navbar');
     var items = submenu.find('.lastLevel-navbar-item').length;
     var itemHeight = $(this).innerHeight();
 
     if (submenu.css('height') === '0px') {
+        $(this).addClass("selected-item");
         submenu.css('height', itemHeight * items + items + 'px');
     } else {
+        $(this).removeClass("selected-item");
         submenu.css('height', '0');
     }
 });

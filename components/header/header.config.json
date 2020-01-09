@@ -85,7 +85,7 @@
       {"url":"/call","name": "800-697-2533" , "submenus":[]},
       {"url":"/rep","name": "CONTACT A REP" , "submenus":[]},
       {"url":"/RESOURCES","name": "US" , "submenus":["Canada", "Europe", "Mexico", "US" ]},
-      {"url":"/ABOUT US","name": "ENGLISH" , "submenus":[]},
+      {"url":"/ABOUT US","name": "ENGLISH" , "submenus":["English","Español","Français"]},
       {"url":"/login","name": "LOGIN" , "submenus":[]}
     ]
   }
