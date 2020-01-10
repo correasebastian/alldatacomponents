@@ -19,8 +19,10 @@
           "ALLDATA Manage Onlie",
           "ALLDATA Titan"
         ]},
-        {"name": "What's Right For My Shop", "submenus":[]},
-        {"name": "Testimonials", "submenus":[]}
+        {"name": "What's Right For My Shop", "submenus":[],
+          "topicImage": "/images/workshop.png"},
+        {"name": "Testimonials", "submenus":[],
+          "topicImage": "/images/workshop.png"}
       ]},
       {"url":"/SUPPORT","name": "SUPPORT" , "submenus":[
         {"name": "Popular Topics", "submenus":[
@@ -46,6 +48,9 @@
           "Traninig Videos",
           "On-Demand Webinars",
           "CAIS Certificaiton Program"
+        ]},
+        {"name": "Contact customer support", "submenus":[
+          "800-859-3282"
         ]}
       ]},
       {"url":"/RESOURCES","name": "RESOURCES" , "submenus":[
@@ -72,7 +77,9 @@
         {"name": "Tech Tips", "submenus":[]},
         {"name": "Industry Webinars", "submenus":[]}
       ]},
-      {"url":"/ABOUT US","name": "ABOUT US" , "submenus":[
+      {"url":"/ABOUT US","name": "ABOUT US" , 
+        "image":"/images/team.png",
+        "submenus":[
         {"name": "ALLDATA LEADERSHIP"},
         {"name": "PARNERS"},
         {"name": "PRESS"},

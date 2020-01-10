@@ -1,6 +1,20 @@
 'use strict';
 import $ from 'jquery';
+// DESKTOP
+$('').hover( function () {
+    
+});
 
+$( '.nav-menu-item.nav-item.has-dropdown' ).hover(
+    function() {
+        $('.cmp-header__desktop .blue-filler').removeClass('d-none');
+    }, function() {
+        $('.cmp-header__desktop .blue-filler').addClass('d-none');
+    }
+  );
+
+
+// MOBILE
 $('.burger-icon, .close-menu').on('click', function () {
     var mobileMenu = $('.cmp-header-mobile__nav-setup');
     var submenu = $('.submenu-navbar');
