@@ -1,6 +1,10 @@
 'use strict';
 import $ from 'jquery';
+// DESKTOP
 
+
+
+// MOBILE
 $('.burger-icon, .close-menu').on('click', function () {
     var mobileMenu = $('.cmp-header-mobile__nav-setup');
     var submenu = $('.submenu-navbar');

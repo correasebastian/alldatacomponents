@@ -1,119 +1,115 @@
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <header class="cmp-header">
-<!-- DESKTOP -->
-<div class="cmp-header__desktop d-none d-lg-block">
-    <div class="cmp-header__nav-setup">
-        <nav class="navbar">
-            <ul class="navbar-menu">
-                {% for menu in menusSetup %}
-                    {% if menu.submenus.length %}
-                    <li class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            {{menu.name}}
-                        </a>
-                        <div class="navbar-dropdown">
-                            {% for submenu in menu.submenus %}
-                            <a class="navbar-item">
-                                {{submenu}}
-                            </a>
-                            {% endfor %}
-                        </div>
-                    </li>
-                    {% else %}
-                    <li class="navbar-item">
-                        <a href="">
-                            {{menu.name}}
-                        </a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </nav>
-    </div>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img src="/images/logo.png" width="112" height="28">
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                {% for menu in menus %}
-                    <a href="{{menu.url}}" class="navbar-item">
-                        {{menu.name}}
-                    </a>
-                {% endfor %}
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <span class="icon has-text-info">
-                        <i class="fas fa-info-circle"></i>
-                    </span>
-                    <span class="icon has-text-success">
-                        <i class="fas fa-check-square"></i>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-<div class="cmp-header__mobile d-lg-none">
-    <div class="mobile-header">
-        <a role="button" class="navbar-item burger-icon p-0 col-1">{% include "@image" with {src: "/images/burguermenu.svg", alt:"Menu"}%}</a>
-        <a class="navbar-item logo col-7 mr-3 mr-md-5" href="/">{% include "@image" with {src: "/images/logo.png", alt:"ALLDATA Logo"}%}</a>
-        <a role="button" class="navbar-item cart-icon col-1 p-0 float-right">{% include "@image" with {src: "/images/cart.svg", alt:"Cart"}%}</a>
-        <a role="button" class="navbar-item search-icon col-1 mr-2 mr-md-3 p-0 float-right">{% include "@image" with {src: "/images/search.svg", alt:"Search"}%}</a>
-        <hr class="sublogo">
-    </div>
-    <div class="cmp-header-mobile__nav-setup">
-        <nav class="navbar">
-            <ul class="navbar-menu">
-                <div class="menu-head">
-                    <span role="button" class="close-menu"><img src="/images/closemenu.svg" alt="close"></span>
-                </div>
-                {% for menu in menus %}
-                    <li class="main-navbar-item">
-                        <a href="#">{{menu.name}} 
-                        {% if menu.name != "BUY NOW"  %}
-                            {% include "@image" with {classes:"float-right", src:"/images/menu_go.svg", alt:menu.name }%}
-                        {% endif %}
-                        </a>
-                    </li>
-                    <div class="submenu-navbar">
-                        <div class="menu-head">
-                            <span class="menu-back"><img src="/images/menu-back.svg" alt="back"></span>
-                            <span class="close-menu"><img src="/images/closemenu.svg" alt="close"></span>
-                        </div>
-                        <ul>
-                            {% for submenu in menu.submenus %}
-                                <li class="submenu-navbar-item">
-                                    <a href="#">{{submenu.name}}{% include "@image" with {classes:"float-right", src:"/images/submenuclosed.svg", alt:submenu.name }%}</a> 
-                                </li>
-                                <div class="lastLevel-navbar" id="{{submenu.name}}">
-                                    <ul>
-                                        {% for submenu in submenu.submenus %}
-                                            <li class="lastLevel-navbar-item">
-                                                <a href="#">{{submenu}}</a>
-                                            </li>
-                                        {% endfor %} 
-                                    </ul>
+   
+    <!-- DESKTOP -->
+    <div class="cmp-header__desktop d-none d-lg-block">
+        {# <div class="cmp-header__nav-setup">
+            <nav class="navbar navbar-expand-lg float-lg-right mx-lg-3">
+                <div class="collapse navbar-collapse" id="nav-setup">
+                    <ul class="navbar-nav">
+                        {% for menu in menusSetup %}
+                            {% if menu.submenus.length %}
+                            <li class="nav-setup-item nav-item dropdown ml-lg-3">
+                                <a class="nav-link dropdown-toggle" id="{{menu.name}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{menu.name}}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="{{menu.name}}">
+                                    {% for submenu in menu.submenus %}
+                                    <a class="dropdown-item px-2">
+                                        {{submenu}}
+                                    </a>
+                                    {% endfor %}
                                 </div>
-                            {% endfor %} 
-                        </ul>
+                            </li>
+                            {% else %}
+                            <li class="nav-setup-item nav-item ml-lg-3">
+                                <a class="nav-link">
+                                    {{menu.name}}
+                                </a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
+        </div> #}
+        <div class="cmp-header__nav-menu">
+            <nav class="navbar navbar-expand-md" role="navigation" aria-label="main navigation">
+                <div class="logo">
+                    <a class="navbar-brand" href="/"><img src="/images/logo.png"></a>
+                    <hr class="sublogo">
+                </div>
+                
+                <div id="nav-menu" class="navbar-menu navbar-collapse">
+                    <ul class="nav navbar-nav" role="menu">
+                        {% for menu in menus %}
+                            {% if menu.submenus.length %}
+                            <li class="nav-menu-item nav-item pl-lg-1 pr-lg-4 px-xl-4" role="presentation">
+                                <a href="" class="nav-link" id="{{menu.name}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    {{menu.name}}
+                                </a>
+                                <div class="nav-submenu row" aria-labelledby="{{menu.name}}">
+                                    {% for submenu in menu.submenus %}
+                                    <div class="nav-group">
+                                        <h6 class="submenu-title">{{submenu.name}}</h6>
+                                        {% if submenu.submenus.length %}
+                                        <ul>
+                                        {% for topic in submenu.submenus %}
+                                            <li><a href="">{{topic}}</a></li>
+                                        {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                    </div>
+                                        
+                                    {% endfor %}
+                                </div>
+                                
+                            </li>
+                            {% else %}
+                            <li class="nav-menu-item nav-item pl-lg-1 pr-lg-4 px-xl-4 no-dropdown">
+                                <a class="nav-link no-submenu">
+                                    {{menu.name}}
+                                </a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="navbar-end float-right">
+                    <span role="button" class="icon icon-seach mr-lg-3">
+                    {% include "@image" with {src: "/images/search.svg", alt:"Search"}%}
+                    </span>
+                    <span role="button" class="icon icon-cart mr-lg-5">
+                    {% include "@image" with {src: "/images/cart.svg", alt:"Cart"}%}
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- MOBILE -->
+    {# <div class="cmp-header__mobile d-lg-none">
+        <div class="mobile-header">
+            <a role="button" class="navbar-item burger-icon p-0 col-1">{% include "@image" with {src: "/images/burguermenu.svg", alt:"Menu"}%}</a>
+            <a class="navbar-item logo col-7 mr-3 mr-md-5" href="/">{% include "@image" with {src: "/images/logo.png", alt:"ALLDATA Logo"}%}</a>
+            <a role="button" class="navbar-item cart-icon col-1 p-0 float-right">{% include "@image" with {src: "/images/cart.svg", alt:"Cart"}%}</a>
+            <a role="button" class="navbar-item search-icon col-1 mr-2 mr-md-3 p-0 float-right">{% include "@image" with {src: "/images/search.svg", alt:"Search"}%}</a>
+            <hr class="sublogo">
+        </div>
+        <div class="cmp-header-mobile__nav-setup">
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <div class="menu-head">
+                        <span role="button" class="close-menu"><img src="/images/closemenu.svg" alt="close"></span>
                     </div>
-                {% endfor %}
-                {% for menu in menusSetup %}
-                    {% if menu.submenus.length %}
+                    {% for menu in menus %}
                         <li class="main-navbar-item">
-                            <a href="#">{{menu.name}}{% include "@image" with {classes:"float-right", src:"/images/menu_go.svg", alt:menu.name }%}</a>
+                            <a href="#">{{menu.name}} 
+                            {% if menu.name != "BUY NOW"  %}
+                                {% include "@image" with {classes:"float-right", src:"/images/menu_go.svg", alt:menu.name }%}
+                            {% endif %}
+                            </a>
                         </li>
                         <div class="submenu-navbar">
                             <div class="menu-head">
@@ -123,25 +119,50 @@
                             <ul>
                                 {% for submenu in menu.submenus %}
                                     <li class="submenu-navbar-item">
-                                        <a href="#">{{submenu}}</a> 
+                                        <a href="#">{{submenu.name}}{% include "@image" with {classes:"float-right", src:"/images/submenuclosed.svg", alt:submenu.name }%}</a> 
                                     </li>
+                                    <div class="lastLevel-navbar" id="{{submenu.name}}">
+                                        <ul>
+                                            {% for submenu in submenu.submenus %}
+                                                <li class="lastLevel-navbar-item">
+                                                    <a href="#">{{submenu}}</a>
+                                                </li>
+                                            {% endfor %} 
+                                        </ul>
+                                    </div>
                                 {% endfor %} 
                             </ul>
                         </div>
-                    {% else %}
-                        <li class="secondary-navbar-item">
-                            <a href="">
-                                {{menu.name}}
-                            </a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </nav>
-    </div>
-</div>
+                    {% endfor %}
+                    {% for menu in menusSetup %}
+                        {% if menu.submenus.length %}
+                            <li class="main-navbar-item">
+                                <a href="#">{{menu.name}}{% include "@image" with {classes:"float-right", src:"/images/menu_go.svg", alt:menu.name }%}</a>
+                            </li>
+                            <div class="submenu-navbar">
+                                <div class="menu-head">
+                                    <span class="menu-back"><img src="/images/menu-back.svg" alt="back"></span>
+                                    <span class="close-menu"><img src="/images/closemenu.svg" alt="close"></span>
+                                </div>
+                                <ul>
+                                    {% for submenu in menu.submenus %}
+                                        <li class="submenu-navbar-item">
+                                            <a href="#">{{submenu}}</a> 
+                                        </li>
+                                    {% endfor %} 
+                                </ul>
+                            </div>
+                        {% else %}
+                            <li class="secondary-navbar-item">
+                                <a href="">
+                                    {{menu.name}}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div> #}
 </header>
 
-<!-- MOBILE -->
-<header class="cmp-header-mobile d-lg-none">
-</header>
