@@ -1,6 +1,6 @@
 import "../favicon.ico";
 import "./bootstrap";
-import "../../components/header/header";
+import "../../components/groups/header/header";
 import "../../components/01-units/button/button";
 import "../../components/blocks/jumbo/jumbo";
 import "../../components/01-units/skew/skew";
