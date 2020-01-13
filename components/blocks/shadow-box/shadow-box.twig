@@ -1,13 +1,13 @@
 
 {% set columContent %}
   <div class="cmp-shadow-box-img">
-    {% include "units/image/image.twig" with image|merge({classes: 'img-fluid'}) %}
+    {% include "@image" with image|merge({classes: 'img-fluid'}) %}
 
     
     <div class="cmp-shadow-box-play-container">
       <button class="btn">
 
-        {% include "units/image/image.twig" with {src:'/images/play.svg'} %}
+        {% include "@image" with {src:'/images/play.svg'} %}
           <span class="sr-only"></span>
       </button>
     </div>
