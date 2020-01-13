@@ -1,0 +1,18 @@
+{
+  "title": "image component",
+  "context": {
+    "alt": "mechanic",
+    "sizes": "(max-width:767px) 50vw,(min-width:768px) 10vw",
+    "src": "/images/mechanic.png",
+    "srcset": "/images/mechanic.png 80w, /images/mechanic@2x.png 160w, /images/mechanic@3x.png 240w,"
+  },
+  "variants": [
+    {
+      "name": "svg",
+      "context": {
+        "alt": "mechanic",
+        "src": "/images/mechanic.svg"
+      }
+    }
+  ]
+}

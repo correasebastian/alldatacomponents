@@ -1,0 +1,34 @@
+{
+  "title": "skew component",
+  "context": {},
+  "variants": [
+    {
+      "name": "on",
+      "context": {
+        "text": "skew warning!",
+        "heading": "warning",
+        "skewClass": "skew-8"
+      }
+    },
+
+    {
+      "name": "image",
+      "context": {
+        "text": "image",
+        "heading": "not skew with image as background",
+        "bgImage": true,
+        "src": "https://res.cloudinary.com/alldataborn/image/upload/v1577487943/alldata/hero_jhnfsz.jpg",
+        "sizes": "100vw",
+        "alt": "hero",
+        "srcset": "https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_200/v1577487943/alldata/hero_jhnfsz.jpg 200w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_400/v1577487943/alldata/hero_jhnfsz.jpg 400w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_600/v1577487943/alldata/hero_jhnfsz.jpg 600w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_800/v1577487943/alldata/hero_jhnfsz.jpg 800w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_1000/v1577487943/alldata/hero_jhnfsz.jpg 1000w"
+      }
+    },
+    {
+      "name": "inlineimage",
+      "context": {
+        "inlineBgImage": "/images/testimonialbg.png",
+        "skewClass": "skew-8"
+      }
+    }
+  ]
+}

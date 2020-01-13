@@ -1,0 +1,41 @@
+/**
+ *  Main css for Slider
+ */
+
+.cmp-slider {
+  .cmp-slider-controls {
+    justify-content: center;
+    position: absolute;
+    bottom: 2vw;
+    left: 0;
+    width: 100%;
+  }
+
+  .cmp-slider-prev,
+  .cmp-slider-next {
+    z-index: 1;
+
+    svg {
+      fill: $gray-400;
+      &:hover {
+        fill: $secondary;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    position: unset;
+    margin-right: 2%;
+    margin-left: 2%;
+    li {
+      margin-left: 0;
+      margin-right: 0;
+      height: 2px;
+      background-color: $gray-400;
+
+      &.active {
+        background-color: $secondary;
+      }
+    }
+  }
+}
