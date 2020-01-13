@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  *  This is the main file for Cols
@@ -13,3 +13,4 @@ class Cols {
 }
 
 */
+

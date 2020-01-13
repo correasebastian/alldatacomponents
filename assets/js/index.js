@@ -7,7 +7,7 @@ import "../../components/01-units/skew/skew";
 import "../../components/01-units/threelines/threelines";
 import "../../components/01-units/heading/heading";
 import "../../components/01-units/simpletext/simpletext";
-import "../../components/layout/cols/cols";
+import "../../components/02-layout/cols/cols";
 import "../../components/blocks/brandingcard/brandingcard";
 import "../../components/01-units/image/image";
 import "../../components/01-units/unitmacros/unitmacros";
