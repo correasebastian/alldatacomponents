@@ -3,14 +3,23 @@
   "context": {
     "text": "This is an slider component!",
     "heading": "My heading",
-    "sameHeight": true
+    "sameHeight": true,
+    "models": [
+      {
+        "src": "https://www.capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg"
+      },
+      {
+        "src": "https://born2invest.com/wp-content/uploads/2016/12/The-breathtaking-mysterious-landscapes-of-Chile.jpg"
+      },
+      { "src": "https://scx1.b-cdn.net/csz/news/800/2018/rusticlandsc.jpg" }
+    ]
   },
-  "variants":[
+  "variants": [
     {
-      "name":"new",
-      "context":{
-        "carouselId":"carouselImages",
-        "images":[
+      "name": "new",
+      "context": {
+        "carouselId": "carouselImages",
+        "images": [
           "https://www.capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg",
           "https://born2invest.com/wp-content/uploads/2016/12/The-breathtaking-mysterious-landscapes-of-Chile.jpg",
           "https://scx1.b-cdn.net/csz/news/800/2018/rusticlandsc.jpg"
@@ -18,20 +27,24 @@
       }
     },
     {
-      "name":"slides",
-      "context":{
+      "name": "slides",
+      "context": {
         "template": "image",
-        "models":[
-          {"src":"https://www.capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg"},
-          {"src":"https://born2invest.com/wp-content/uploads/2016/12/The-breathtaking-mysterious-landscapes-of-Chile.jpg"},
-          {"src":"https://scx1.b-cdn.net/csz/news/800/2018/rusticlandsc.jpg"}
+        "models": [
+          {
+            "src": "https://www.capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg"
+          },
+          {
+            "src": "https://born2invest.com/wp-content/uploads/2016/12/The-breathtaking-mysterious-landscapes-of-Chile.jpg"
+          },
+          { "src": "https://scx1.b-cdn.net/csz/news/800/2018/rusticlandsc.jpg" }
         ]
       }
     },
     {
-      "name":"slide",
-      "context":{
-        "slideContent":"Hello",
+      "name": "slide",
+      "context": {
+        "slideContent": "Hello",
         "active": true
       }
     }
