@@ -7,7 +7,7 @@
             {% set template = "shadow-box" %}
             {% include "@slider--dyn" with {carouselId:carouselId, models : testimonials, sameHeight: false, template : template} %}
             <div class="cmp-testimonial-footer" >
-                {% include "units/simpletext/simpletext.twig" %}
+                {% include "@simpletext" %}
                 {% include "@button" %}
             </div>
         </div>
