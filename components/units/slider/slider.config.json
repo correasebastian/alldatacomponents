@@ -5,6 +5,7 @@
     "heading": "My heading",
     "template": "image",
     "sameHeight": true,
+    "carouselId": "carouselImages",
     "models": [
       {
         "src": "https://www.capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg"
