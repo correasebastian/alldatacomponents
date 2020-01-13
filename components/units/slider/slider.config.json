@@ -3,6 +3,7 @@
   "context": {
     "text": "This is an slider component!",
     "heading": "My heading",
+    "template": "image",
     "sameHeight": true,
     "models": [
       {
