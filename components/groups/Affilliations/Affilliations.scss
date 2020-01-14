@@ -1,0 +1,37 @@
+/**
+ *  Main css for Affilliations
+ */
+
+.cmp-Affilliations {
+  .cmp-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #54565a;
+  }
+  .tns-nav {
+    display: block;
+  }
+  .cmp-button {
+    margin: 50px auto 0px;
+    padding: 12px 70px;
+  }
+  .cmp-affiliations-button {
+    widows: 100%;
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .cmp-text {
+      width: 575px;
+    }
+    .cmp-affiliations-button {
+      text-align: right;
+    }
+    .cmp-button {
+      margin-right: 100px;
+      margin-top: 30px;
+      padding: 12px 30px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+<div class="cmp-Affilliations px-lg-5 mx-lg-3">
+    {% include "@jumbo" with 
+            {
+                "headingLevel": "h2",
+                "btnText": "",
+                "threelines": true,
+                "modifier": "No Button"
+            } 
+    %}
+    {% include "@companies" with companies only %}
+    <div class="cmp-affiliations-button">
+        {% include "@button"%}
+    </div>
+</div>
+
