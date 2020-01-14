@@ -1,23 +1,46 @@
 {
   "title": "companies component",
+  "carouselId": "carouselImages",
   "context": {
     "companies": [
       {
+        "affiliation": "Association",
         "src": "/images/3-m-logo.svg"
       },
       {
+        "affiliation": "association",
         "src": "/images/asa-logo.svg"
       },
       {
+        "affiliation": "integration partner",
         "src": "/images/carmax-logo.svg"
       },
       {
+        "affiliation": "Associaiton",
         "src": "/images/bosch-logo.svg"
       },
       {
+        "affiliation": "customer",
         "src": "/images/jiffy-lube.svg"
       },
       {
+        "affiliation": "Associaiton",
+        "src": "/images/key.svg"
+      },
+      {
+        "affiliation": "Association",
+        "src": "/images/3-m-logo.svg"
+      },
+      {
+        "affiliation": "Associaiton",
+        "src": "/images/key.svg"
+      },
+      {
+        "affiliation": "Association",
+        "src": "/images/3-m-logo.svg"
+      },
+      {
+        "affiliation": "Associaiton",
         "src": "/images/key.svg"
       }
     ]
