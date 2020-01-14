@@ -24,7 +24,7 @@
         {% for company in companies %}
         <div class="cmp-companies-company ">
             <span class="cmp-company-type d-none d-lg-block mb-lg-3">{{company.affiliation}}</span>
-            {% include "units/image/image.twig" with company %}
+            {% include "@image" with company %}
         </div>
         {% endfor %}
     </div>
@@ -38,7 +38,7 @@
         <div class="cmp-companies-company">
         {% endif %}
           <div class="cmp-companie-logo">
-            {% include "units/image/image.twig" with company %}
+            {% include "@image" with company %}
             <span class="cmp-company-type d-lg-none mt-2">{{company.affiliation}}</span>
           </div>
            {% set lenght = lenght - 1 %}
