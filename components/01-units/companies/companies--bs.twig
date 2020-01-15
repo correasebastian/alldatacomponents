@@ -7,28 +7,41 @@
 {% set countDesktop = companies.length / DK_NUMBER %}
 {% set countDesktop = countDesktop|round(0, 'ceil') %}
 {% set lenght = companies.length %}
-<div class="cmp-companies cmp-companies__bs">
-	<h1>{{companies.length}}</h1>
+{% set template = 'companies--page' %}
+
+<div
+	class="cmp-companies cmp-companies__bs">
+	{# <h1>{{companies.length}}</h1> #}
 	<div class="cmp-companies-sm d-lg-none">
-		<h2>mobile</h2>
-		{{countMobile}}
+		{# <h2>mobile</h2> #}
+		{# {{countMobile}} #}
+
+		{% set modelsMB = [] %}
 
 		{% for idx in 0..(countMobile-1) %}
-			<h3>{{idx}}</h3>
-        {% include "@companies--page" with {companies : companies|slice((idx* MB_NUMBER), MB_NUMBER) } %}
+			{# <h3>{{idx}}</h3> #}
+		  {% set modelsMB = modelsMB|merge([ {companies: companies|slice((idx* MB_NUMBER), MB_NUMBER)}]) %}
+			{# {% include "@companies--page" with {companies : companies|slice((idx* MB_NUMBER), MB_NUMBER) } %} #}
 		{% endfor %}
+
+		{% include "@slider--dyn" with {carouselId: 'carouselCompanyMB', models : modelsMB, sameHeight: true, template : template} %}
 
 
 	</div>
 
 	<div class="cmp-companies-lg d-none d-lg-block">
-		<h2>desktop</h2>
-		{{countDesktop}}
+		{# <h2>desktop</h2> #}
+		{# {{countDesktop}} #}
+
+		{% set modelsDK = [] %}
 
 		{% for idx in 0..(countDesktop-1) %}
-			<h3>{{idx}}</h3>
-       {% include "@companies--page" with {companies : companies|slice((idx* DK_NUMBER), DK_NUMBER) } %}
+			{# <h3>{{idx}}</h3> #}
+		  {% set modelsDK = modelsDK|merge([ {companies: companies|slice((idx* DK_NUMBER), DK_NUMBER)}]) %}
+			{# {% include "@companies--page" with {companies : companies|slice((idx* DK_NUMBER), DK_NUMBER) } %} #}
 		{% endfor %}
+		{% include "@slider--dyn" with {carouselId: 'carouselCompanyDK', models : modelsDK, sameHeight: true, template : template} %}
+
 	</div>
 
 </div>
