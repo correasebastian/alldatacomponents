@@ -9,20 +9,19 @@
 {% set lenght = companies.length %}
 <div class="cmp-companies cmp-companies__bs">
 	<h1>{{companies.length}}</h1>
-	<div class="cmp-companies-sm">
+	<div class="cmp-companies-sm d-lg-none">
 		<h2>mobile</h2>
 		{{countMobile}}
 
 		{% for idx in 0..(countMobile-1) %}
 			<h3>{{idx}}</h3>
         {% include "@companies--page" with {companies : companies|slice((idx* MB_NUMBER), MB_NUMBER) } %}
-			</div>
 		{% endfor %}
 
 
 	</div>
 
-	<div class="cmp-companies-lg">
+	<div class="cmp-companies-lg d-none d-lg-block">
 		<h2>desktop</h2>
 		{{countDesktop}}
 
