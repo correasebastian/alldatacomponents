@@ -82,3 +82,24 @@
     }
   }
 }
+
+.cmp-companies__bs {
+}
+
+.cmp-companies-page {
+  display: flex;
+  flex-wrap: wrap;
+
+  .cmp-companies-company {
+    width: 33%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    @extend .py-2;
+
+    @include media-breakpoint-up(lg) {
+      width: 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+}

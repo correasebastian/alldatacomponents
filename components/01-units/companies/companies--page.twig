@@ -1,5 +1,7 @@
-<div class="page">
+<div class="cmp-companies-page">
 	{% for company in companies %}
-		{% include "@image" with company %}
+		<div class="cmp-companies-company">
+			{% include "@image" with company %}
+		</div>
 	{% endfor %}
 </div>
