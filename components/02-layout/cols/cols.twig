@@ -1,7 +1,9 @@
 
 
-<div class="cmp-cols row {% if mobileModifier %} cols-{{mobileModifier}}{% endif %} {% if tabletModifier %} cols-md-{{tabletModifier}}{% endif %} {% if desktopModifier %} cols-lg-{{desktopModifier}}{% endif %} {% if noGutter %} no-gutter {% endif %} ">
+<div class="cmp-cols {% if mobileModifier %} cols-{{mobileModifier}}{% endif %} {% if tabletModifier %} cols-md-{{tabletModifier}}{% endif %} {% if desktopModifier %} cols-lg-{{desktopModifier}}{% endif %} {% if noGutter %} no-gutter {% endif %} ">
    
+
+
    {% if content %}
     {{content}}
    {% endif %}
