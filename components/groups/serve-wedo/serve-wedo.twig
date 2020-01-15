@@ -16,9 +16,11 @@
             {% endfor %}
         </div>
     </div>
-    <div class="cmp-image-separator d-block d-lg-none"></div>
+    <div class="cmp-image-separator d-block d-lg-none col-12 my-5">
+        {% include "@image" with {src: inlineBgImage} %}
+    </div>
     <div class="cmp-what-wedo">
-        <div class="cmp-what-wedo__about-us col-11 col-sm-8 col-md-7 col-lg-5">
+        <div class="cmp-what-wedo__about-us col-11 col-sm-8 col-md-7 col-lg-5 mx-auto">
         {% include "@jumbo" with jumboContent %}
         </div>
     </div>

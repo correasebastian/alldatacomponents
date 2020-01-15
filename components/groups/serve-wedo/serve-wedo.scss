@@ -3,11 +3,25 @@
  */
 
 .cmp-serve-wedo {
+  background: url("/../images/carfix2.jpg") top no-repeat;
   .cmp-tricolor__position-inverted {
-    display: none;
+    height: 1300px;
+    .cmp-tricolor_start {
+      display: none;
+    }
+    .cmp-tricolor_middle {
+      background-color: #eeeeee;
+      width: 170%;
+      left: -70%;
+    }
+    .cmp-tricolor_end {
+      right: -90%;
+      width: 90%;
+    }
   }
 
   .cmp-whoweserve {
+    padding-top: 100px;
     position: relative;
     .cmp-cardscontainer {
       display: flex;
@@ -17,7 +31,20 @@
       //     width: 100%;
     }
   }
-
+  .cmp-image-separator {
+    padding: 0;
+    height: 230px;
+    overflow: hidden;
+    transform: skewY(8deg);
+    background-color: #1b3d6e;
+    .cmp-image {
+      width: 150%;
+      margin-top: -20%;
+      margin-left: -30%;
+      transform: skewY(-8deg);
+      opacity: 0.4;
+    }
+  }
   .cmp-what-wedo {
     position: relative;
 
@@ -29,10 +56,22 @@
   }
 
   @include media-breakpoint-up(lg) {
-    height: 2500px;
+    background: url("/../images/carfix2.jpg") bottom no-repeat;
+    height: 2000px;
     .cmp-tricolor__position-inverted {
-      display: block;
-      height: 2500px;
+      height: 2000px;
+      .cmp-tricolor_start {
+        left: -70%;
+        display: block;
+      }
+      .cmp-tricolor_middle {
+        width: inherit;
+        left: 0;
+      }
+      .cmp-tricolor_end {
+        width: 100%;
+        right: -30%;
+      }
     }
 
     .cmp-what-wedo {
@@ -41,7 +80,7 @@
       .cmp-what-wedo__about-us {
         width: 530px;
         float: right;
-        margin: 250px 200px 0px 0px;
+        margin: 250px 200px 0px 0px !important;
       }
     }
   }
