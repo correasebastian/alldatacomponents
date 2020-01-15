@@ -21,8 +21,7 @@
     "plyr": "^3.5.6",
     "popper.js": "^1.16.0",
     "renamer": "^1.1.4",
-    "sass": "^1.23.1",
-    "tiny-slider": "^2.9.2"
+    "sass": "^1.23.1"
   },
   "scripts": {
     "prestartdev": "cp _preview.twig ./components/_preview.twig && npm run cpimages",
