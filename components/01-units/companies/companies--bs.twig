@@ -1,0 +1,43 @@
+{# <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> #}
+{% set MB_NUMBER = 6 %}
+{% set DK_NUMBER = 5 %}
+{% set countMobile = companies.length / MB_NUMBER %}
+{% set countMobile = countMobile|round(0, 'ceil') %}
+{% set countDesktop = companies.length / DK_NUMBER %}
+{% set countDesktop = countDesktop|round(0, 'ceil') %}
+{% set lenght = companies.length %}
+<div class="cmp-companies">
+	<h1>{{companies.length}}</h1>
+	<div class="cmp-companies-sm">
+		<h2>mobile</h2>
+		{{countMobile}}
+
+		{% for idx in 0..(countMobile-1) %}
+			<h3>{{idx}}</h3>
+
+			<div class="page">
+				{% for company in companies|slice((idx* MB_NUMBER), MB_NUMBER) %}
+          {% include "@image" with company %}
+				{% endfor %}
+			</div>
+		{% endfor %}
+
+
+	</div>
+
+	<div class="cmp-companies-lg">
+		<h2>desktop</h2>
+		{{countDesktop}}
+
+		{% for idx in 0..(countDesktop-1) %}
+			<h3>{{idx}}</h3>
+      <div class="page">
+				{% for company in companies|slice((idx* DK_NUMBER), DK_NUMBER) %}
+          {% include "@image" with company %}
+				{% endfor %}
+			</div>
+		{% endfor %}
+	</div>
+
+</div>
