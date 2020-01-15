@@ -5,11 +5,16 @@
     {% include "@jumbo" %}  
 {% endset %}
 
+{% set drupal %}
+  {% include "@drupalitemsfacade" with {items:columContent} %}
+{% endset %}
+
+
 {% set skewContent %}
 
   {% include "@tricolor--position" %}
   <div class="cmp-hero py-4 px-4">
-    {% include "@cols" with {content : columContent, mobileModifier: "1", tabletModifier: "2", } only %}
+    {% include "@cols" with {content : drupal, mobileModifier: "1", tabletModifier: "2", } only %}
   </div>
 {% endset %}
 
