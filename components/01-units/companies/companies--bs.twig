@@ -15,11 +15,7 @@
 
 		{% for idx in 0..(countMobile-1) %}
 			<h3>{{idx}}</h3>
-
-			<div class="page">
-				{% for company in companies|slice((idx* MB_NUMBER), MB_NUMBER) %}
-          {% include "@image" with company %}
-				{% endfor %}
+        {% include "@companies--page" with {companies : companies|slice((idx* MB_NUMBER), MB_NUMBER) } %}
 			</div>
 		{% endfor %}
 
@@ -32,11 +28,7 @@
 
 		{% for idx in 0..(countDesktop-1) %}
 			<h3>{{idx}}</h3>
-      <div class="page">
-				{% for company in companies|slice((idx* DK_NUMBER), DK_NUMBER) %}
-          {% include "@image" with company %}
-				{% endfor %}
-			</div>
+       {% include "@companies--page" with {companies : companies|slice((idx* DK_NUMBER), DK_NUMBER) } %}
 		{% endfor %}
 	</div>
 
