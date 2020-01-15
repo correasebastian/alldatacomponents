@@ -1,0 +1,48 @@
+/**
+ *  Main css for Serve Wedo
+ */
+
+.cmp-serve-wedo {
+  .cmp-tricolor__position-inverted {
+    display: none;
+  }
+
+  .cmp-whoweserve {
+    position: relative;
+    .cmp-cardscontainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      //   .cmp-servcard{
+      //     width: 100%;
+    }
+  }
+
+  .cmp-what-wedo {
+    position: relative;
+
+    .cmp-what-wedo__about-us {
+      .cmp-jumbo .cmp-text {
+        font-weight: 300;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 2500px;
+    .cmp-tricolor__position-inverted {
+      display: block;
+      height: 2500px;
+    }
+
+    .cmp-what-wedo {
+      position: relative;
+
+      .cmp-what-wedo__about-us {
+        width: 530px;
+        float: right;
+        margin: 250px 200px 0px 0px;
+      }
+    }
+  }
+}
