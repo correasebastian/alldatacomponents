@@ -1,0 +1,25 @@
+<div class="cmp-whoweserve">
+	{% include "@jumbo" with 
+            {
+                "headingLevel": "h2",
+                "btnText": "",
+                "threelines": true,
+                "modifier": "No Button and no simple text"
+            } 
+        %}
+
+	{% set cardsContent %}
+
+	{% for card in cards %}
+		{% include "@servcard2" with card %}
+	{% endfor %}
+	{% endset %}
+
+
+	{% set drupal %}
+	{% include "@drupalitemsfacade" with {items:cardsContent} %}
+	{% endset %}
+	<div class="cmp-servicescards__cardcontainer mx-sm-auto">
+		{% include "@cols" with {content: drupal, mobileModifier: "1", desktopModifier: "3", } %}
+	</div>
+</div>

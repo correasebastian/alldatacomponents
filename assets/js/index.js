@@ -33,4 +33,6 @@ import "../../components/groups/footer/footer";
 import "../../components/blocks/collapse-list/collapse-list";
 import "../../components/groups/Affilliations/Affilliations";
 import "../../components/01-units/drupalitemsfacade/drupalitemsfacade";
+import "../../components/groups/whoweserve/whoweserve";
+import "../../components/01-units/servcard2/servcard2";
 import "../../components/groups/serve-wedo/serve-wedo";

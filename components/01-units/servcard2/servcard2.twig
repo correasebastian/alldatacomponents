@@ -1,0 +1,15 @@
+<div role="presentation" class="cmp-servcard mobile-overflow mb-sm-3  {% if lastCard %} last-card {% endif %} 
+{% if middlePos %}{% endif %}">
+    <div class="cmp-servcard__image">
+        {% include "@imageblue" %}
+    </div>
+    <div class="cmp-servcard__content">
+        {% include "@heading" %}
+        <button class="cmp-servcard__more"><img src={{'/images/plus-orange.svg' |path}} alt="more"></button>
+        <div class="cmp-servcard__description{% if lastCard %}-lastcard {% endif %} {% if not lastCard %} d-none d-lg-block{% endif %}" aria-hidden="true" aria-expanded="false">
+            {% include "@simpletext" %}
+            {% include "@cardlink" %}
+        </div>
+    </div>
+    
+</div>
