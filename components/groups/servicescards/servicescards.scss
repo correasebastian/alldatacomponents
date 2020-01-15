@@ -10,53 +10,52 @@
   .cmp-tricolor__position-inverted {
     margin-top: -300px;
     height: inherit;
-    .cmp-tricolor_start{
+    .cmp-tricolor_start {
       display: none;
     }
-    .cmp-tricolor_middle{
+    .cmp-tricolor_middle {
       left: -60%;
       width: 125%;
     }
-    .cmp-tricolor_end{
+    .cmp-tricolor_end {
       width: 110%;
       left: 60%;
     }
   }
-  .cmp-jumbo{
+  .cmp-jumbo {
     position: relative;
   }
-  .cmp-servicescards__cardcontainer{
+  .cmp-servicescards__cardcontainer {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    .cmp-servcard{
-      width: 100%;
-    }
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   .cmp-servcard{
+    //     width: 100%;
+    //   }
   }
 }
-@include  media-breakpoint-up(lg){
+@include media-breakpoint-up(lg) {
   .cmp-servicescards {
-    padding: 300px 45px 0px;
-    .cmp-servicescards__cardcontainer{
-      .cmp-servcard{
-        width: 32%;
-      }
-    }
+    // padding: 300px 45px 0px;
+    // .cmp-servicescards__cardcontainer{
+    //   .cmp-servcard{
+    //     width: 32%;
+    //   }
+    // }
     .cmp-tricolor__position-inverted {
       margin-top: -300px;
       height: inherit;
-      .cmp-tricolor_start{
+      .cmp-tricolor_start {
         display: none;
       }
-      .cmp-tricolor_middle{
+      .cmp-tricolor_middle {
         left: -40%;
         width: inherit;
       }
-      .cmp-tricolor_end{
+      .cmp-tricolor_end {
         width: 100%;
         left: 30%;
       }
     }
   }
-
 }

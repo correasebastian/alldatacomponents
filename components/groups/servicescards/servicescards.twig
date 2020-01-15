@@ -9,10 +9,21 @@
                 "modifier": "No Button and no simple text"
             } 
         %}
-        <div class="cmp-servicescards__cardcontainer mx-sm-auto">
+
+
+        {% set cardsContent %}
+            
             {% for card in cards %}
                 {% include "@servcard" with card %}
             {% endfor %}
+        {% endset %}
+
+
+        {% set drupal %}
+            {% include "@drupalitemsfacade" with {items:cardsContent} %}
+        {% endset %}
+        <div class="cmp-servicescards__cardcontainer mx-sm-auto">
+            {% include "@cols" with {content: drupal, mobileModifier: "1", desktopModifier: "3", noGutter:true} %}
         </div>
      
         
