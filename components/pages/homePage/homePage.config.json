@@ -3,7 +3,9 @@
   "context": {
     "hero": "@hero--slider",
     "branding": "@branding",
+    "servewedo": "@serve-wedo",
     "testimonial": "@testimonial--overlap",
+    "affilliations": "@affilliations",
     "latest": "@latest",
     "footer": "@footer"
   }
