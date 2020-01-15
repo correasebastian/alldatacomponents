@@ -1,0 +1,45 @@
+
+<section class="cmp-serve-wedo">
+    {% include "@tricolor--position" with {inverted: true}%}
+    <div class="cmp-whoweserve col-11 col-lg-11 mx-auto">
+        {% include "@jumbo" with 
+            {
+                "headingLevel": "h2",
+                "btnText": "",
+                "threelines": true,
+                "modifier": "No Button and no simple text"
+            } 
+        %}
+        <div class="cmp-cardscontainer  ">
+            {% for card in cards %}
+                {% include "@servcard" with card %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="cmp-image-separator d-block d-lg-none col-12 my-5">
+        {% include "@image" with {src: inlineBgImage} %}
+    </div>
+    <div class="cmp-what-wedo">
+        <div class="cmp-what-wedo__about-us col-11 col-sm-8 col-md-7 col-lg-5 mx-auto">
+        {% include "@jumbo" with jumboContent %}
+        </div>
+    </div>
+</section>
+
+
+    {# background image solo para desktop
+      backgroun position desde la mitad #}
+      <div>
+        {# who we serve
+        cards
+        tricolor solo pa mobile #}
+      </div>
+      <div>
+        {# mobile only 
+        image azul #}
+      </div>
+      <div>
+        {# what we do
+        tricolor solo pa mobile #}
+      </div>
+      {# div the-colors  desktop only #}

@@ -1,0 +1,87 @@
+/**
+ *  Main css for Serve Wedo
+ */
+
+.cmp-serve-wedo {
+  background: url("/../images/carfix2.jpg") top no-repeat;
+  .cmp-tricolor__position-inverted {
+    height: 1300px;
+    .cmp-tricolor_start {
+      display: none;
+    }
+    .cmp-tricolor_middle {
+      background-color: #eeeeee;
+      width: 170%;
+      left: -70%;
+    }
+    .cmp-tricolor_end {
+      right: -90%;
+      width: 90%;
+    }
+  }
+
+  .cmp-whoweserve {
+    padding-top: 100px;
+    position: relative;
+    .cmp-cardscontainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      //   .cmp-servcard{
+      //     width: 100%;
+    }
+  }
+  .cmp-image-separator {
+    padding: 0;
+    height: 230px;
+    overflow: hidden;
+    transform: skewY(8deg);
+    background-color: #1b3d6e;
+    .cmp-image {
+      width: 150%;
+      margin-top: -20%;
+      margin-left: -30%;
+      transform: skewY(-8deg);
+      opacity: 0.4;
+    }
+  }
+  .cmp-what-wedo {
+    position: relative;
+
+    .cmp-what-wedo__about-us {
+      .cmp-jumbo .cmp-text {
+        font-weight: 300;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: url("/../images/carfix2.jpg") bottom no-repeat;
+    height: 2000px;
+    .cmp-tricolor__position-inverted {
+      height: 2000px;
+      .cmp-tricolor_start {
+        left: -70%;
+        display: block;
+      }
+      .cmp-tricolor_middle {
+        width: inherit;
+        left: 0;
+      }
+      .cmp-tricolor_end {
+        width: 100%;
+        right: -30%;
+      }
+    }
+
+    .cmp-what-wedo {
+      position: relative;
+
+      .cmp-what-wedo__about-us {
+        width: 530px;
+        float: right;
+        margin: 250px 200px 0px 0px !important;
+      }
+    }
+  }
+}
