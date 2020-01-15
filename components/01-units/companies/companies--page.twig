@@ -1,8 +1,10 @@
-<div class="cmp-companies-page">
+<div class="cmp-companies-page text-center">
 	{% for company in companies %}
 		<div class="cmp-companies-company">
+			<div class="cmp-companies-logo my-auto my-lg-0">
 			{% include "@image" with company %}
-			<small class="cmp-company-affiliation">{{company.affiliation}}</small>
+			<small class="cmp-company-affiliation mt-3 mt-lg-0 mb-lg-3">{{company.affiliation}}</small>
+			</div>
 		</div>
 	{% endfor %}
 </div>
