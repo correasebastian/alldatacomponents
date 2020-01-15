@@ -2,6 +2,7 @@
 	{% for company in companies %}
 		<div class="cmp-companies-company">
 			{% include "@image" with company %}
+			<small class="cmp-company-affiliation">{{company.affiliation}}</small>
 		</div>
 	{% endfor %}
 </div>
