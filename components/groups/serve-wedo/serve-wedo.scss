@@ -3,6 +3,7 @@
  */
 
 .cmp-serve-wedo {
+  margin-top: -100px;
   background: url("/../images/carfix2.jpg") top no-repeat;
   .cmp-tricolor__position-inverted {
     height: 1300px;
@@ -47,7 +48,7 @@
   }
   .cmp-what-wedo {
     position: relative;
-
+    margin-bottom: 130px;
     .cmp-what-wedo__about-us {
       .cmp-jumbo .cmp-text {
         font-weight: 300;
@@ -57,9 +58,9 @@
 
   @include media-breakpoint-up(lg) {
     background: url("/../images/carfix2.jpg") bottom no-repeat;
-    height: 2000px;
+    height: 2300px;
     .cmp-tricolor__position-inverted {
-      height: 2000px;
+      height: 2300px;
       .cmp-tricolor_start {
         left: -70%;
         display: block;
