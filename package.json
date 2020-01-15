@@ -32,7 +32,7 @@
     "build": "npm run commonbuild && npm run prod:cpheroku",
     "static:build": "npm run commonbuild && npm run cpimages && fractal build",
     "start": "fractal start -p $PORT ",
-    "prod:1": "parcel build _previewprod.html --out-dir public/",
+    "prod:1": "parcel build _previewprod.html --no-minify --out-dir public/",
     "prod:preview": "cp  public/_previewprod.html ./components/_preview.twig",
     "dev:css": "parcel watch assets/scss/global.scss --no-hmr --public-url /css/ --out-dir public/css --out-file global.css",
     "dev:js": "parcel watch assets/js/index.js --no-hmr --public-url /js/ --out-dir public/js --out-file index.js",
