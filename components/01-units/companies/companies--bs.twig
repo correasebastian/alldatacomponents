@@ -16,7 +16,7 @@
 		  {% set modelsMB = modelsMB|merge([ {companies: companies|slice((idx* MB_NUMBER), MB_NUMBER)}]) %}
 		{% endfor %}
 
-		{% include "@slider--dyn" with {carouselId: 'carouselCompanyMB', models : modelsMB, sameHeight: true, template : template} %}
+		{% include "@slider--dyn" with {carouselId: 'carouselCompanyMB', models : modelsMB, sameHeight: true, template : template, controlsBottom: true} %}
 
 
 	</div>
