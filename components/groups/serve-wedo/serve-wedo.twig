@@ -11,9 +11,14 @@
             } 
         %}
         <div class="cmp-cardscontainer  ">
-            {% for card in cards %}
-                {% include "@servcard" with card %}
-            {% endfor %}
+     
+            {% set cardsContent %}
+                {% for card in cards %}
+                    {% include "@servcard" with card %}
+                {% endfor %}
+            {% endset %}
+
+            {% include "@drupalitemsfacade" with {items:cardsContent} %}
         </div>
     </div>
     <div class="cmp-image-separator d-block d-lg-none col-12 my-5">

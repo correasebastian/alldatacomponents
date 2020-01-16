@@ -25,9 +25,12 @@
     padding-top: 100px;
     position: relative;
     .cmp-cardscontainer {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
+      .field__items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
       //   .cmp-servcard{
       //     width: 100%;
     }
