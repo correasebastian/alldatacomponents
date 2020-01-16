@@ -3,6 +3,11 @@
  */
 
 .cmp-header {
+  + .cmp-skew {
+    // to overlay on top of that section
+    z-index: -1;
+  }
+
   color: $blue;
   .navbar-link:not(.is-arrowless)::after {
     right: 2.025em;
