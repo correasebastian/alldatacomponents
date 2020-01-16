@@ -4,7 +4,7 @@
 
 .cmp-serve-wedo {
   margin-top: -100px;
-  background: url("/../images/carfix2.jpg") top no-repeat;
+  background: url("/assets/images/carfix2.jpg") top no-repeat;
   .cmp-tricolor__position-inverted {
     height: 1300px;
     .cmp-tricolor_start {
@@ -60,7 +60,7 @@
   }
 
   @include media-breakpoint-up(lg) {
-    background: url("/../images/carfix2.jpg") bottom no-repeat;
+    background: url("/assets/images/carfix2.jpg") bottom no-repeat;
     height: 2300px;
     .cmp-tricolor__position-inverted {
       height: 2300px;
