@@ -1,0 +1,26 @@
+/**
+ *  Main css for Demo01172020
+ */
+
+.cmp-demo01172020 {
+  .cmp-servicescards__cardcontainer {
+    .field__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > .field__item {
+        @media (min-width: 992px) {
+          flex: 0 0 28%;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      .cmp-servcard,
+      .last-card {
+        min-width: 100%;
+      }
+    }
+  }
+}
