@@ -35,8 +35,15 @@
   }
 
   .cmp-shadow-box-img {
-    .field--name-field-testimonial-desk-image {
-      max-width: 100%;
-    }
+    // .field--name-field-testimonial-desk-image {
+
+    //     .field--name-image{
+    //         max-width: 100%;
+    //     }
+    // }
+  }
+
+  .cmp-image {
+    max-width: 100%;
   }
 }
