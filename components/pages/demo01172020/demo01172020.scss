@@ -29,4 +29,14 @@
       @extend .mx-auto;
     }
   }
+
+  .cmp-shadow-box-quote {
+    align-self: center;
+  }
+
+  .cmp-shadow-box-img {
+    .field--name-field-testimonial-desk-image {
+      max-width: 100%;
+    }
+  }
 }
