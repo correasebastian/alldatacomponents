@@ -23,4 +23,10 @@
       }
     }
   }
+
+  .cmp-brandingcard {
+    .field--name-image {
+      @extend .mx-auto;
+    }
+  }
 }
