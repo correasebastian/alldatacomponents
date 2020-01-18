@@ -1,17 +1,44 @@
 "use strict";
 import $ from "jquery";
 // DESKTOP
-$("").hover(function() {});
+if ($(window).width() > 991) {
+  var arraySubmenus = $(".nav.navbar-nav").find(".nav-submenu");
+  var arrayMenus = $(".nav.navbar-nav").find(".nav-link.has-dropdown");
+  var currentSub;
+  var currentMenu;
+  $(".navbar.navbar-expand-lg").focusin(function() {
+    var elem = $(this).find(":focus");
+    if (elem.hasClass("nav-link has-dropdown")) {
+      var submenu = elem.parent().children(".nav-submenu");
+      arraySubmenus.css({ display: "none", "z-index": 0 });
+      arraySubmenus.attr("aria-hidden", "true");
+      arrayMenus.attr("aria-expanded", "false");
+      elem.attr("aria-expanded", "true");
+      submenu.attr("aria-hidden", "false");
+      submenu.css({ display: "flex", "z-index": 1 });
+      $(".cmp-header__desktop .blue-filler").removeClass("d-none");
+    } else if (
+      elem.hasClass("submenu-link") ||
+      elem.hasClass("submenu-title")
+    ) {
+    } else {
+      $(".cmp-header__desktop .blue-filler").addClass("d-none");
 
-$(".nav-menu-item.nav-item.has-dropdown").hover(
-  function() {
-    $(".cmp-header__desktop .blue-filler").removeClass("d-none");
-  },
-  function() {
-    $(".cmp-header__desktop .blue-filler").addClass("d-none");
-  }
-);
+      arraySubmenus.css({ display: "none", "z-index": 0 });
+      arraySubmenus.attr("aria-hidden", "true");
+      arrayMenus.attr("aria-expanded", "false");
+    }
+  });
 
+  $(".nav-menu-item.nav-item.has-dropdown").hover(
+    function() {
+      $(".cmp-header__desktop .blue-filler").removeClass("d-none");
+    },
+    function() {
+      $(".cmp-header__desktop .blue-filler").addClass("d-none");
+    }
+  );
+}
 // MOBILE
 $(".burger-icon, .close-menu").on("click", function() {
   var mobileMenu = $(".cmp-header-mobile__nav-setup");
