@@ -47,10 +47,10 @@
                         {% for menu in menus %}
                             {% if menu.submenus.length %}
                             <li class="nav-menu-item nav-item pl-lg-1 pr-lg-4 px-xl-4 has-dropdown" role="presentation">
-                                <a href="" class="nav-link" id="{{menu.name}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <a href="" class="nav-link has-dropdown" id="{{menu.name}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
                                     {{menu.name}}
                                 </a>
-                                <div class="nav-submenu" aria-labelledby="{{menu.name}}">
+                                <div class="nav-submenu" id="{{menu.name}}-submenu" aria-labelledby="{{menu.name}}" aria-hidden="true">
                                     <div class="col-lg-1"></div>
                                     {% if menu.image %}
                                     <div class="col-lg-4 mt-lg-5">
@@ -70,11 +70,11 @@
                                             {% if submenu.topicImage %}
                                             <img src="{{submenu.topicImage}}" alt="{{submenu.name}}">
                                             {% endif %}
-                                            <h6 class="submenu-title">{{submenu.name}}</h6>
+                                            <h6><a href="" class="submenu-title">{{submenu.name}}</a></h6>
                                             {% if submenu.submenus.length %}
                                             <ul>
                                             {% for topic in submenu.submenus %}
-                                                <li><a href="">{{topic}}</a></li>
+                                                <li><a href="" class="submenu-link">{{topic}}</a></li>
                                             {% endfor %}
                                             </ul>
                                             {% endif %}
@@ -89,7 +89,7 @@
                             </li>
                             {% else %}
                             <li class="nav-menu-item nav-item pl-lg-1 pr-lg-4 px-xl-4 no-dropdown">
-                                <a class="nav-link no-submenu">
+                                <a href="" class="nav-link no-submenu">
                                     {{menu.name}}
                                 </a>
                             </li>
