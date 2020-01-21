@@ -9,6 +9,7 @@ if ($(window).width() > 991) {
   $(".navbar.navbar-expand-lg").focusin(function() {
     var elem = $(this).find(":focus");
     if (elem.hasClass("nav-link has-dropdown")) {
+      currentMenu = elem;
       var submenu = elem.parent().children(".nav-submenu");
       arraySubmenus.css({ display: "none", "z-index": 0 });
       arraySubmenus.attr("aria-hidden", "true");
@@ -24,6 +25,14 @@ if ($(window).width() > 991) {
     } else {
       $(".cmp-header__desktop .blue-filler").addClass("d-none");
 
+      arraySubmenus.css({ display: "none", "z-index": 0 });
+      arraySubmenus.attr("aria-hidden", "true");
+      arrayMenus.attr("aria-expanded", "false");
+    }
+  });
+
+  $(".nav-submenu").on("keydown", function(event) {
+    if (event.which == 27) {
       arraySubmenus.css({ display: "none", "z-index": 0 });
       arraySubmenus.attr("aria-hidden", "true");
       arrayMenus.attr("aria-expanded", "false");
