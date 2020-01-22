@@ -10,10 +10,10 @@ const path = require("path");
  */
 const fractal = (module.exports = require("@frctl/fractal").create());
 const twigAdapter = require("@frctl/twig")({
-  handlePrefix: "@components/"
-  // namespaces: {
-  //     '@components': 'components/01-units/threelines'
-  // },
+  //   handlePrefix: "#",
+  namespaces: {
+    components: "./"
+  }
 });
 
 var isProd = process.env.NODE_ENV === "production";
