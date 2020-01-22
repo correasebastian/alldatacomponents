@@ -13,7 +13,11 @@ const twigAdapter = require("@frctl/twig")({
   //   handlePrefix: "#",
   namespaces: {
     components: "./",
-    units: "./01-units"
+    units: "./01-units",
+    layout: "./02-layout",
+    blocks: "./blocks",
+    groups: "./groups",
+    pages: "./pages"
   }
 });
 
