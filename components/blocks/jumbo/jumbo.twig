@@ -3,12 +3,12 @@
 
 
 {# headingLevel are h1 h2 h3 etc #}
-   {% include '@heading' with {classes : "cmp-jumbo__heading" } %}
+   {% include '@units/heading/heading.twig' with {classes : "cmp-jumbo__heading" } %}
  
-   {% include '@simpletext' %}
+   {% include '@units/simpletext/simpletext.twig' %}
 
    {% if btnText is not empty %}
-      {% include '@button' %}
+      {% include '@units/button/button.twig' %}
    {% endif %}
 </div>
 
