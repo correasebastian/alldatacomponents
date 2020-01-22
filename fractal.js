@@ -12,7 +12,8 @@ const fractal = (module.exports = require("@frctl/fractal").create());
 const twigAdapter = require("@frctl/twig")({
   //   handlePrefix: "#",
   namespaces: {
-    components: "./"
+    components: "./",
+    units: "./01-units"
   }
 });
 
