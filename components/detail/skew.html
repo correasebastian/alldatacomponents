@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+
+<title>skew component | alldata components</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>alldata components</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-317ae51375edd14ddfe42f8d47e33e29">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/skew.html" title="Component preview">
+            skew component
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-317ae51375edd14ddfe42f8d47e33e29">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/skew.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-317ae51375edd14ddfe42f8d47e33e29">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-317ae51375edd14ddfe42f8d47e33e29-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-317ae51375edd14ddfe42f8d47e33e29-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-317ae51375edd14ddfe42f8d47e33e29-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-317ae51375edd14ddfe42f8d47e33e29-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-317ae51375edd14ddfe42f8d47e33e29-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-317ae51375edd14ddfe42f8d47e33e29-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-317ae51375edd14ddfe42f8d47e33e29-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-skew columns is-centered      "</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-317ae51375edd14ddfe42f8d47e33e29-panel-view">
+    <code class="Code Code--lang-twig">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-skew columns is-centered </span></span></span><span class="hljs-template-variable">{{ skewClass ?  skewClass : ''}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ overlapPrev ?  'overlap-prev-section' : ''}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ bgImage ?  'position-relative bg-transparent' : ''}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ skewBg ?  skewBg : ''}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ classes ?  classes : ''}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> overflowUnset %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> overflow-unset </span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>
+    </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> inlineBgImage %}</span><span class="xml"><span class="hljs-tag">  <span class="hljs-attr">style</span>=<span class="hljs-string">" background-image: url(</span></span></span><span class="hljs-template-variable">{{inlineBgImage}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">); background-size: cover; border-bottom: 1px solid white; "</span> </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"><span class="hljs-tag">
+&gt;</span>
+
+
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> skewClass %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inner-section </span></span></span><span class="hljs-template-variable">{{ cmpClass ?  cmpClass : ''}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> content %}</span><span class="xml">
+            </span><span class="hljs-template-variable">{{content}}</span><span class="xml">
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span><span class="hljs-template-tag">{% <span class="hljs-name">else</span> %}</span><span class="xml">
+    
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> bgImage %}</span><span class="xml">
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "<a href="image.html">@image</a>" %}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> content %}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{content}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+    
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-317ae51375edd14ddfe42f8d47e33e29-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-317ae51375edd14ddfe42f8d47e33e29-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-7d73d6b6d117134077f9a1ed0201892c">skew.js</option>
+                
+                <option value="file-d860ae78bb47a1198236983e3f4c5469">skew.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-7d73d6b6d117134077f9a1ed0201892c" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code">
+                                <pre><span class="hljs-meta">"use strict"</span>;
+
+<span class="hljs-comment">/**
+ *  This is the main file for Skew
+ */</span>
+
+<span class="hljs-comment">/* STARTER CODE
+
+class Skew {
+    constructor($inst) {
+        cponsole.log('Initializing Skew')
+    }
+}
+
+*/</span>
+
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/skew/skew.js"><span>/components/raw/skew/skew.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/01-units/skew/skew.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">169 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-d860ae78bb47a1198236983e3f4c5469" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-comment">/**
+ *  Main css for Skew
+ */</span>
+
+<span class="hljs-selector-class">.cmp-skew</span> {
+  <span class="hljs-comment">// border: red solid 1px;</span>
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">background-color</span>: lightblue;
+  <span class="hljs-attribute">overflow-x</span>: hidden;
+
+  &amp;<span class="hljs-selector-class">.bg-transparent</span> {
+    <span class="hljs-attribute">background-color</span>: transparent;
+  }
+  &gt; <span class="hljs-selector-class">.cmp-image</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    @<span class="hljs-keyword">extend</span> .img-fluid;
+    <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-selector-tag">object</span>-fit: cover;
+  }
+}
+
+<span class="hljs-selector-class">.overflow-unset</span> {
+  <span class="hljs-attribute">overflow</span>: unset;
+}
+
+<span class="hljs-comment">/**
+ *  Main css for Section
+ */</span>
+
+<span class="hljs-variable">$pi</span>: <span class="hljs-number">3.14159265359</span>;
+$_precision: <span class="hljs-number">10</span>;
+
+@function pow(<span class="hljs-variable">$base</span>, <span class="hljs-variable">$exp</span>) {
+  <span class="hljs-variable">$value</span>: <span class="hljs-variable">$base</span>;
+
+  @<span class="hljs-keyword">if</span> <span class="hljs-variable">$exp</span>&gt;<span class="hljs-number">1</span> {
+    @<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span> from 2 through <span class="hljs-variable">$exp</span> {
+      <span class="hljs-variable">$value</span>: <span class="hljs-variable">$value</span> * <span class="hljs-variable">$base</span>;
+    }
+  }
+
+  @<span class="hljs-keyword">if</span> <span class="hljs-variable">$exp</span> &lt; 1 {
+    @<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span> from 0 through -<span class="hljs-variable">$exp</span> {
+      <span class="hljs-variable">$value</span>: <span class="hljs-variable">$value</span> / <span class="hljs-variable">$base</span>;
+    }
+  }
+
+  @return <span class="hljs-variable">$value</span>;
+}
+
+@function fact(<span class="hljs-variable">$num</span>) {
+  <span class="hljs-variable">$fact</span>: <span class="hljs-number">1</span>;
+
+  @<span class="hljs-keyword">if</span> <span class="hljs-variable">$num</span>&gt;<span class="hljs-number">0</span> {
+    @<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span> from 1 through <span class="hljs-variable">$num</span> {
+      <span class="hljs-variable">$fact</span>: <span class="hljs-variable">$fact</span> * <span class="hljs-variable">$i</span>;
+    }
+  }
+
+  @return <span class="hljs-variable">$fact</span>;
+}
+
+@function _to_unitless_rad(<span class="hljs-variable">$angle</span>) {
+  @<span class="hljs-keyword">if</span> unit(<span class="hljs-variable">$angle</span>) == <span class="hljs-string">"deg"</span> {
+    <span class="hljs-variable">$angle</span>: <span class="hljs-variable">$angle</span> / <span class="hljs-number">180deg</span> * <span class="hljs-variable">$pi</span>;
+  }
+
+  @<span class="hljs-keyword">if</span> unit(<span class="hljs-variable">$angle</span>) == <span class="hljs-string">"rad"</span> {
+    <span class="hljs-variable">$angle</span>: <span class="hljs-variable">$angle</span> / <span class="hljs-number">1rad</span>;
+  }
+
+  @return <span class="hljs-variable">$angle</span>;
+}
+
+@function sin(<span class="hljs-variable">$angle</span>) {
+  <span class="hljs-variable">$a</span>: _to_unitless_rad(<span class="hljs-variable">$angle</span>);
+  <span class="hljs-variable">$sin</span>: <span class="hljs-variable">$a</span>;
+
+  @<span class="hljs-keyword">for</span> <span class="hljs-variable">$n</span> from 1 through $_precision {
+    <span class="hljs-variable">$sin</span>: <span class="hljs-variable">$sin</span> + (pow(-<span class="hljs-number">1</span>, <span class="hljs-variable">$n</span>) / fact(<span class="hljs-number">2</span> * <span class="hljs-variable">$n</span> + <span class="hljs-number">1</span>)) * pow(<span class="hljs-variable">$a</span>, (<span class="hljs-number">2</span> * <span class="hljs-variable">$n</span> + <span class="hljs-number">1</span>));
+  }
+
+  @return <span class="hljs-variable">$sin</span>;
+}
+
+@function cos(<span class="hljs-variable">$angle</span>) {
+  <span class="hljs-variable">$a</span>: _to_unitless_rad(<span class="hljs-variable">$angle</span>);
+  <span class="hljs-variable">$cos</span>: <span class="hljs-number">1</span>;
+
+  @<span class="hljs-keyword">for</span> <span class="hljs-variable">$n</span> from 1 through $_precision {
+    <span class="hljs-variable">$cos</span>: <span class="hljs-variable">$cos</span> + (pow(-<span class="hljs-number">1</span>, <span class="hljs-variable">$n</span>) / fact(<span class="hljs-number">2</span> * <span class="hljs-variable">$n</span>)) * pow(<span class="hljs-variable">$a</span>, <span class="hljs-number">2</span> * <span class="hljs-variable">$n</span>);
+  }
+
+  @return <span class="hljs-variable">$cos</span>;
+}
+
+@function tan(<span class="hljs-variable">$angle</span>) {
+  @return sin(<span class="hljs-variable">$angle</span>) / cos(<span class="hljs-variable">$angle</span>);
+}
+
+<span class="hljs-selector-class">.cmp-section</span> {
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-comment">// width: 400px;</span>
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100vw</span>;
+
+  <span class="hljs-selector-class">.inner-section</span> {
+    <span class="hljs-attribute">border</span>: red solid <span class="hljs-number">1px</span>;
+  }
+}
+
+<span class="hljs-selector-class">.bg-blue</span> {
+  <span class="hljs-attribute">background-color</span>: lightblue;
+}
+
+<span class="hljs-selector-class">.skew-30</span> {
+  <span class="hljs-attribute">transform</span>: skewY(<span class="hljs-number">30deg</span>);
+}
+
+<span class="hljs-comment">// degrees</span>
+@<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span> from 0 through 20 {
+  <span class="hljs-variable">$deg</span>: <span class="hljs-variable">$i</span> * <span class="hljs-number">1deg</span>;
+  <span class="hljs-variable">$tan</span>: tan(<span class="hljs-variable">$deg</span>);
+  <span class="hljs-variable">$hb</span>: <span class="hljs-variable">$tan</span> * (<span class="hljs-number">100</span>/<span class="hljs-number">2</span>) * <span class="hljs-number">1vw</span>;
+  <span class="hljs-selector-class">.skew-</span>#{<span class="hljs-variable">$i</span>} {
+    <span class="hljs-comment">// if we wnat to move it down to compensar el skew</span>
+    <span class="hljs-attribute">transform</span>: skewY(<span class="hljs-variable">$deg</span>) translateY(<span class="hljs-variable">$hb</span>);
+    <span class="hljs-comment">// where to start the inner content</span>
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$hb</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$hb</span>;
+    <span class="hljs-selector-class">.inner-section</span> {
+      <span class="hljs-attribute">transform</span>: skewY(-<span class="hljs-number">1</span> * <span class="hljs-variable">$deg</span>);
+    }
+
+    &amp;<span class="hljs-selector-class">.overlap-prev-section</span> {
+      <span class="hljs-attribute">transform</span>: skewY(<span class="hljs-variable">$deg</span>) translateY(<span class="hljs-variable">$hb</span> * -<span class="hljs-number">1</span>);
+    }
+  }
+
+  @<span class="hljs-keyword">include</span> media-breakpoint-up(md) {
+    <span class="hljs-selector-class">.skew-md-</span>#{<span class="hljs-variable">$i</span>} {
+      <span class="hljs-comment">// if we wnat to move it down to compensar el skew</span>
+      <span class="hljs-attribute">transform</span>: skewY(<span class="hljs-variable">$deg</span>) translateY(<span class="hljs-variable">$hb</span>);
+      <span class="hljs-comment">// where to start the inner content</span>
+      <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$hb</span>;
+      <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$hb</span>;
+      <span class="hljs-selector-class">.inner-section</span> {
+        <span class="hljs-attribute">transform</span>: skewY(-<span class="hljs-number">1</span> * <span class="hljs-variable">$deg</span>);
+      }
+
+      &amp;<span class="hljs-selector-class">.overlap-prev-section</span> {
+        <span class="hljs-attribute">transform</span>: skewY(<span class="hljs-variable">$deg</span>) translateY(<span class="hljs-variable">$hb</span> * -<span class="hljs-number">1</span>);
+      }
+    }
+  }
+
+  <span class="hljs-selector-class">.overlap-next-</span>#{<span class="hljs-variable">$i</span>} {
+    + <span class="hljs-selector-class">.cmp-skew</span> {
+      <span class="hljs-comment">// if we wnat to move it down to compensar el skew</span>
+      <span class="hljs-attribute">transform</span>: skewY(<span class="hljs-variable">$deg</span>) translateY(<span class="hljs-variable">$hb</span> * -<span class="hljs-number">1</span>);
+      <span class="hljs-comment">// where to start the inner content</span>
+      <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$hb</span>;
+      <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$hb</span>;
+      <span class="hljs-selector-class">.inner-section</span> {
+        <span class="hljs-attribute">transform</span>: skewY(-<span class="hljs-number">1</span> * <span class="hljs-variable">$deg</span>);
+      }
+    }
+  }
+
+  <span class="hljs-selector-class">.skew-padding-bottom-</span>#{<span class="hljs-variable">$i</span>} {
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$hb</span> * <span class="hljs-number">2</span>;
+  }
+}
+
+<span class="hljs-selector-class">.overlap-prev-section-y</span> {
+  <span class="hljs-attribute">transform</span>: translateY(-<span class="hljs-number">5.2552117633vw</span> * <span class="hljs-number">2</span>);
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/skew/skew.scss"><span>/components/raw/skew/skew.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/01-units/skew/skew.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">3.1 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-317ae51375edd14ddfe42f8d47e33e29-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@skew</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="skew--default.html">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="skew--on.html">
+                    <span>On</span>
+                </a>, 
+            
+                <a href="skew--image.html">
+                    <span>Image</span>
+                </a>, 
+            
+                <a href="skew--inlineimage.html">
+                    <span>Inlineimage</span>
+                </a>
+            
+            </span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/skew.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/skew.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">components/01-units/skew/skew.twig</span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="image.html">@<span>image</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(13)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="jumbo.html">@<span>jumbo</span></a>, 
+            
+                <a href="jumbo--no-three-lines.html">@<span>jumbo--no-three-lines</span></a>, 
+            
+                <a href="jumbo--no-button.html">@<span>jumbo--no-button</span></a>, 
+            
+                <a href="jumbo--no-button-and-no-three-lines.html">@<span>jumbo--no-button-and-no-three-lines</span></a>, 
+            
+                <a href="branding.html">@<span>branding</span></a>, 
+            
+                <a href="branding--overlap.html">@<span>branding--overlap</span></a>, 
+            
+                <a href="hero.html">@<span>hero</span></a>, 
+            
+                <a href="hero--slider.html">@<span>hero--slider</span></a>, 
+            
+                <a href="latest.html">@<span>latest</span></a>, 
+            
+                <a href="servicescards.html">@<span>servicescards</span></a>, 
+            
+                <a href="testimonial.html">@<span>testimonial</span></a>, 
+            
+                <a href="testimonial--overlap.html">@<span>testimonial--overlap</span></a>, 
+            
+                <a href="whatwedo.html">@<span>whatwedo</span></a>
+            
+            </span>
+        </li>
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-317ae51375edd14ddfe42f8d47e33e29-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-units">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Units</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button.html" data-pjax>
+                <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cardlink.html" data-pjax>
+                <span>Cardlink</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-companies">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Companies</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="companies--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="companies--bs.html" data-pjax>
+                <span>Bs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="companies--page.html" data-pjax>
+                <span>Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="drupalitemsfacade.html" data-pjax>
+                <span>Drupalitemsfacade</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heading.html" data-pjax>
+                <span>Heading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-image">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Image</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image--svg.html" data-pjax>
+                <span>Svg</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="latestheading.html" data-pjax>
+                <span>Latestheading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="quote.html" data-pjax>
+                <span>Quote</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="servcard2.html" data-pjax>
+                <span>Servcard 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="simpletext.html" data-pjax>
+                <span>Simpletext</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-skew">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Skew</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="skew--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="skew--on.html" data-pjax>
+                <span>On</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="skew--image.html" data-pjax>
+                <span>Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="skew--inlineimage.html" data-pjax>
+                <span>Inlineimage</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-slider">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Slider</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="slider--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="slider--slide.html" data-pjax>
+                <span>Slide</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="slider--dyn.html" data-pjax>
+                <span>Dyn</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="slider--slidessimple.html" data-pjax>
+                <span>Slidessimple</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="threelines.html" data-pjax>
+                <span>Threelines</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-tricolor">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Tricolor</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tricolor--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tricolor--position.html" data-pjax>
+                <span>Position</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="unitmacros.html" data-pjax>
+                <span>Unitmacros</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-video">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Video</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="video--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="video--iframe.html" data-pjax>
+                <span>Iframe</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layout">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Layout</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-cols">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Cols</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cols--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cols--drupalcontent.html" data-pjax>
+                <span>Drupalcontent</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-blocks">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Blocks</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="brandingcard.html" data-pjax>
+                <span>Brandingcard</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="collapse-list.html" data-pjax>
+                <span>Collapse List</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="imageblue.html" data-pjax>
+                <span>Imageblue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-jumbo">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Jumbo</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="jumbo--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="jumbo--no-three-lines.html" data-pjax>
+                <span>No Three Lines</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="jumbo--no-button.html" data-pjax>
+                <span>No Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="jumbo--no-button-and-no-three-lines.html" data-pjax>
+                <span>No Button And No Three Lines</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="jumbo--simple.html" data-pjax>
+                <span>Simple</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="latestcard.html" data-pjax>
+                <span>Latestcard</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="servcard.html" data-pjax>
+                <span>Servcard</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="shadow-box.html" data-pjax>
+                <span>Shadow Box</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-groups">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Groups</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="affilliations.html" data-pjax>
+                <span>Affilliations</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-branding">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Branding</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="branding--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="branding--overlap.html" data-pjax>
+                <span>Overlap</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="footer.html" data-pjax>
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="header.html" data-pjax>
+                <span>Header</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--slider.html" data-pjax>
+                <span>Slider</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="latest.html" data-pjax>
+                <span>Latest</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="serve-wedo.html" data-pjax>
+                <span>Serve Wedo</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="servicescards.html" data-pjax>
+                <span>Servicescards</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-testimonial">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Testimonial</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="testimonial--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="testimonial--overlap.html" data-pjax>
+                <span>Overlap</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="whatwedo.html" data-pjax>
+                <span>Whatwedo</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="whoweserve.html" data-pjax>
+                <span>Whoweserve</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Pages</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="demo01172020.html" data-pjax>
+                <span>Demo 01172020</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="homepage.html" data-pjax>
+                <span>Homepage</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>

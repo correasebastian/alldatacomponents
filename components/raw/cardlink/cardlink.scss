@@ -1,0 +1,35 @@
+/**
+ *  Main css for CardLink
+ */
+
+.cmp-cardlink {
+  color: #1b3d6e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding-bottom: 7px;
+  color: #1b3d6e;
+  border-bottom: 2px solid #f16824;
+  width: fit-content; //this class is given to a div instead a link and the link is moved inside the div, so the div width must be specified
+}
+
+.cmp-cardlink:hover {
+  text-decoration: none;
+  color: #1b3d6e;
+}
+
+@include media-breakpoint-up(lg) {
+  .cmp-cardlink {
+    border-bottom: none;
+  }
+
+  .cmp-cardlink:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #f16824;
+  }
+}

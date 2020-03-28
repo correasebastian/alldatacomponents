@@ -1,0 +1,5 @@
+https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_200/v1577487943/alldata/hero_jhnfsz.jpg 200w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_400/v1577487943/alldata/hero_jhnfsz.jpg 400w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_600/v1577487943/alldata/hero_jhnfsz.jpg 600w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_800/v1577487943/alldata/hero_jhnfsz.jpg 800w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_1000/v1577487943/alldata/hero_jhnfsz.jpg 1000w
+
+
+
+https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_200/v1577487943/alldata/hero_jhnfsz.jpg 200w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_400/v1577487943/alldata/hero_jhnfsz.jpg 400w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_600/v1577487943/alldata/hero_jhnfsz.jpg 600w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_800/v1577487943/alldata/hero_jhnfsz.jpg 800w, https://res.cloudinary.com/alldataborn/image/upload/q_auto,w_1000/v1577487943/alldata/hero_jhnfsz.jpg 1000w

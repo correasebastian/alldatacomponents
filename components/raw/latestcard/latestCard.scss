@@ -1,0 +1,60 @@
+/**
+ *  Main css for Servcard
+ */
+
+
+.cmp-latestcard {
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 95%;
+
+  .cmp-latestcard__image{
+    display: flex;
+    width: 100%;
+    max-height: 293px;
+    overflow: hidden;
+    .cmp-image{
+      width: 100%;
+    }
+  }
+
+  .cmp-latestcard__content{
+    background: white;
+    padding: 30px 40px;
+  
+    .cmp-heading{
+      color: #1b3e6f;
+    }
+    .cmp-text{
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #54565a;
+      padding-bottom: 15px;
+    }
+    .cmp-latestcard__more{
+      display: none;
+    }
+  }
+}
+
+.cmp-latestcard:hover{
+  box-shadow: 20px 19px 61px -25px rgba(0,0,0,0.27);
+}
+
+.cmp-latestcard:hover .cmp-imageblue .cmp-image {
+  opacity: 1;
+  transition: 0.3s;
+}
+  
+.cmp-latestcard:hover .cmp-cardlink {
+  text-decoration: none;
+  color: #1b3d6e;
+  cursor: pointer;
+  border-bottom: 2px solid #f16824;
+}

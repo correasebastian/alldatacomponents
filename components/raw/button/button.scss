@@ -1,0 +1,17 @@
+/**
+ *  Main css for Button
+ */
+
+.cmp-button {
+  color: $primary;
+  border-width: 2px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+
+  // from zeppling
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}

@@ -1,0 +1,87 @@
+/**
+ *  Main css for Cols
+ */
+
+@mixin cols-direct-child-not-col {
+  > *:not([class*=" col"]):not([class^="col"]):not(.field__items) {
+    @content;
+  }
+}
+
+@mixin cols-drupal-direct-child-not-col {
+  .field__items > *:not([class*=" col"]):not([class^="col"]) {
+    @content;
+  }
+}
+
+.cmp-cols {
+  @extend .row;
+
+  @include cols-direct-child-not-col {
+    @extend .col;
+  }
+
+  &.no-gutter {
+    @include cols-direct-child-not-col {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    $colopposite: 12 / $i;
+    &.cols-#{$i} {
+      @include cols-direct-child-not-col {
+        @extend .col-#{$colopposite};
+      }
+    }
+    &.cols-md-#{$i} {
+      @include cols-direct-child-not-col {
+        @extend .col-md-#{$colopposite};
+      }
+    }
+    &.cols-lg-#{$i} {
+      @include cols-direct-child-not-col {
+        @extend .col-lg-#{$colopposite};
+      }
+    }
+  }
+}
+
+// drupal injects
+
+.cmp-cols {
+  .field__items {
+    @extend .row;
+  }
+
+  @include cols-drupal-direct-child-not-col {
+    @extend .col;
+  }
+
+  &.no-gutter {
+    @include cols-drupal-direct-child-not-col {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    $colopposite: 12 / $i;
+    &.cols-#{$i} {
+      @include cols-drupal-direct-child-not-col {
+        @extend .col-#{$colopposite};
+      }
+    }
+    &.cols-md-#{$i} {
+      @include cols-drupal-direct-child-not-col {
+        @extend .col-md-#{$colopposite};
+      }
+    }
+    &.cols-lg-#{$i} {
+      @include cols-drupal-direct-child-not-col {
+        @extend .col-lg-#{$colopposite};
+      }
+    }
+  }
+}

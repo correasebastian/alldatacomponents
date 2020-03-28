@@ -1,0 +1,75 @@
+/**
+ *  Main css for Shadow Box
+ */
+
+.cmp-shadow-box {
+  > .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .cmp-shadow-box-quote {
+    // border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // @extend .p-0;
+
+    .cmp-quote {
+      @extend .shadow-box;
+      @extend .px-4vw;
+      @extend .py-8vw;
+    }
+  }
+
+  .cmp-shadow-box-img {
+    position: relative;
+    @extend .shadow-box;
+    // border: blue solid 1px;
+    > .cmp-image {
+      object-fit: cover;
+      width: 100%;
+      max-height: 300px;
+      object-position: top;
+      margin: 0;
+    }
+    > .field--type-entity-reference {
+      margin: 0;
+    }
+    > .node .field--type-image {
+      margin: 0;
+    }
+    > .field--type-image img {
+      margin: 0;
+    }
+
+    .cmp-shadow-box-play-container {
+      @extend .fill-relative-parent;
+      display: flex;
+      align-items: flex-end;
+      button {
+        padding: 4vw;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .cmp-shadow-box-quote {
+      .cmp-quote {
+        @extend .my-md-4vw;
+      }
+    }
+
+    .cmp-shadow-box-img {
+      > .cmp-image {
+        min-height: 100%;
+        max-height: unset;
+      }
+
+      .cmp-shadow-box-play-container {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

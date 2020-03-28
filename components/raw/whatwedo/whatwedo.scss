@@ -1,0 +1,70 @@
+/**
+ *  Main css for Whatwedo
+ */
+
+.cmp-whatwedo {
+  width: 100%;
+  max-width: 1600px;
+  height: 1000px;
+  .cmp-whatwedo__bgmobile.d-lg-none {
+    margin-bottom: 140px;
+    .cmp-skew{
+      height: inherit;
+      width: 100%;
+      overflow: hidden;
+      .cmp-whatwedo__mob-bluefilter{
+        width: 100%;
+        height: 500px;
+        background-color: #05056696;
+        opacity: .7;
+        position: absolute;
+        margin-top: -140px;
+      }
+    }
+  }
+  .cmp-whatwedo__about-us{
+    width: 330px;
+    margin: 0px auto;
+    .cmp-jumbo .cmp-text{
+      font-weight: 300;
+    }
+  }
+}
+
+@include  media-breakpoint-up(lg){
+  .cmp-whatwedo {
+    .cmp-whatwedo__bgdesk{
+      height: inherit;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      .cmp-skew{
+        margin-top: 0px;
+        height: inherit;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        .cmp-tricolor__position-inverted {
+          margin-top: 0px;
+          height: inherit;
+          .cmp-tricolor_start{
+            // display: none;
+          }
+          .cmp-tricolor_middle{
+            // display: none;
+          }
+          .cmp-tricolor_end{
+            // display: none;
+          }
+        }
+      }
+    }
+    .cmp-whatwedo__about-us{
+      width: 530px;
+      float: right;
+      margin: 250px 200px 0px 0px;
+    }
+  }
+
+}
+

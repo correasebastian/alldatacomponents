@@ -1,0 +1,92 @@
+/**
+ *  Main css for Latest
+ */
+
+.bg-primary-100 {
+  background-color: #004987;
+}
+
+.cmp-latest {
+  padding-top: 1.5rem;
+  padding-bottom: 8rem;
+
+  .cmp-heading {
+    color: white;
+  }
+
+  .cmp-servcard,
+  .last-card {
+    width: 475px;
+    height: 535px;
+    box-shadow: none;
+    display: inline-block;
+
+    .cmp-servcard__image {
+      display: flex;
+      width: 100%;
+      max-height: 293px;
+      overflow: hidden;
+      .cmp-image {
+        width: 100%;
+      }
+    }
+
+    .cmp-servcard__content {
+      padding: 30px 40px;
+
+      .cmp-heading {
+        color: #1b3e6f;
+      }
+      .cmp-text {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #54565a;
+        padding-bottom: 15px;
+      }
+      .cmp-servcard__more {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-overflow {
+    overflow: visible;
+  }
+
+  .last-card {
+    text-align: left;
+
+    .cmp-servcard__content .cmp-cardlink {
+      border: 0px;
+      padding: 0 0 7px 0;
+    }
+  }
+
+  .cmp-servcard:hover {
+    box-shadow: 20px 19px 61px -25px rgba(0, 0, 0, 0.27);
+  }
+  .cmp-servcard:hover .cmp-imageblue .cmp-image {
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .cmp-servcard:hover .cmp-cardlink {
+    text-decoration: none;
+    color: #1b3d6e;
+    cursor: pointer;
+    border-bottom: 2px solid #f16824;
+  }
+
+  .more-news {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .cmp-button {
+    color: white;
+  }
+}

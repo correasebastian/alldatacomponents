@@ -1,0 +1,86 @@
+/**
+ *  Main css for Companies
+ */
+
+.cmp-companies__bs {
+  @include media-breakpoint-up(lg) {
+    a.cmp-slider-prev,
+    a.cmp-slider-next {
+      position: absolute;
+      margin-top: -50px;
+    }
+    a.cmp-slider-prev {
+      left: 1em;
+    }
+    a.cmp-slider-next {
+      right: 1em;
+    }
+    ol.carousel-indicators {
+      display: none;
+    }
+  }
+}
+
+.cmp-companies-page {
+  display: flex;
+  flex-wrap: wrap;
+
+  .cmp-companies-company {
+    width: 33%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    @extend .py-2;
+    display: flex;
+    flex-direction: column;
+    .cmp-companies-logo {
+      display: flex;
+      flex-direction: column;
+    }
+    .cmp-company-affiliation {
+      font-size: 8px;
+      line-height: 1.25;
+      letter-spacing: 0.16px;
+      color: #54565a;
+      text-transform: uppercase;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+
+      .cmp-company-affiliation {
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        order: -1;
+      }
+    }
+  }
+}
+
+.cmp-companies__bs {
+}
+
+.cmp-companies-page {
+  display: flex;
+  flex-wrap: wrap;
+
+  .cmp-companies-company {
+    width: 33%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    @extend .py-2;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+      width: 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+
+      .cmp-company-affiliation {
+        order: -1;
+      }
+    }
+  }
+}

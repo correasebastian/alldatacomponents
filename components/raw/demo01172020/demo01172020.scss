@@ -1,0 +1,424 @@
+/**
+ *  Main css for Demo01172020
+ */
+
+// BEGIN OF DRUPAL SITE MARKUP STYLES
+
+.field__items > *:not([class*=" col"]):not([class^="col"]),
+.cmp-cols.cols-lg-1
+  > *:not([class*=" col"]):not([class^="col"]):not(.field__items) {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/**
+ * Container
+ */
+.layout-container {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media all and (min-width: 851px) {
+  .layout-container {
+    max-width: 1290px;
+  }
+}
+
+/**
+ * Main
+ */
+.layout-main-wrapper {
+  min-height: 300px;
+}
+.layout-main {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/**
+ * @file
+ * Visual styles for Bartik's main-content component.
+ */
+
+.main-content .section {
+  padding: 0 15px;
+}
+.main-content h2 {
+  margin-bottom: 2px;
+  font-size: 1.429em;
+  line-height: 1.4;
+}
+
+@media all and (min-width: 851px) {
+  .main-content {
+    position: relative;
+    float: left; /* LTR */
+  }
+  [dir="rtl"] .main-content {
+    float: right;
+  }
+  .layout-two-sidebars .main-content {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .layout-one-sidebar .main-content {
+    width: 75%;
+  }
+  .layout-no-sidebars .main-content {
+    width: 100%;
+  }
+  .layout-sidebar-first .main-content {
+    margin-right: 0; /* LTR */
+    margin-left: 25%; /* LTR */
+  }
+  [dir="rtl"] .layout-sidebar-first .main-content {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  .layout-sidebar-second .main-content {
+    margin-right: 25%; /* LTR */
+    margin-left: 0; /* LTR */
+  }
+  [dir="rtl"] .layout-sidebar-second .main-content {
+    margin-right: 0;
+    margin-left: 25%;
+  }
+}
+
+/**
+ * @file
+ * Visual styles for Bartik's field components.
+ */
+
+.field--type-entity-reference {
+  margin: 0 0 1.2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.field--type-entity-reference .field__label {
+  margin: 0;
+  padding-right: 5px; /* LTR */
+  font-weight: normal;
+}
+[dir="rtl"] .field--type-entity-reference .field__label {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.field--type-entity-reference .field__label,
+.field--type-entity-reference ul.links {
+  font-size: 0.8em;
+}
+.node--view-mode-teaser .field--type-entity-reference .field__label,
+.node--view-mode-teaser .field--type-entity-reference ul.links {
+  font-size: 0.821em;
+}
+.field--type-entity-reference ul.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* This is required to win over specificity of [dir="rtl"] .region-content ul */
+[dir="rtl"] .field--type-entity-reference ul.links {
+  padding: 0;
+}
+.field--type-entity-reference ul.links li {
+  float: left; /* LTR */
+  padding: 0 1em 0 0; /* LTR */
+  white-space: nowrap;
+}
+[dir="rtl"] .field--type-entity-reference ul.links li {
+  float: right;
+  padding: 0 0 0 1em;
+}
+
+@media all and (min-width: 560px) {
+  .node .field--type-image {
+    float: left; /* LTR */
+    margin: 0 1em 0 0; /* LTR */
+  }
+  [dir="rtl"] .node .field--type-image {
+    float: right;
+    margin: 0 0 0 1em;
+  }
+  .node .field--type-image + .field--type-image {
+    clear: both;
+  }
+}
+.field--type-image img,
+.field--name-user-picture img {
+  margin: 0 0 1em;
+}
+.field--type-image a {
+  border-bottom: none;
+}
+.field--name-field-tags {
+  margin: 0 0 1.2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.field--name-field-tags .field__label {
+  margin: 0;
+  padding-right: 5px; /* LTR */
+  font-weight: normal;
+}
+[dir="rtl"] .field--name-field-tags .field__label {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.field--name-field-tags .field__label,
+.field--name-field-tags ul.links {
+  font-size: 0.8em;
+}
+.node--view-mode-teaser .field--name-field-tags .field__label,
+.node--view-mode-teaser .field--name-field-tags ul.links {
+  font-size: 0.821em;
+}
+.field--name-field-tags ul.links {
+  margin: 0;
+  padding: 0;
+}
+.field--name-field-tags ul.links li {
+  float: left; /* LTR */
+  padding: 0 1em 0 0; /* LTR */
+  white-space: nowrap;
+}
+[dir="rtl"] .field--name-field-tags ul.links li {
+  float: right;
+  padding: 0 0 0 1em;
+}
+
+/**
+ * @file
+ * Visual styles for Bartik's blocks.
+ */
+
+/* Block has its own content wrapper. */
+.block .content {
+  margin-top: 10px;
+}
+
+/*
+ * @file
+ * Provides the layout styles for layout_onecol.
+ */
+.layout--onecol .layout__region {
+  width: 100%;
+}
+
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  border-left: 1px solid #bbb;
+  background: #f7f7f7;
+  font-style: italic;
+}
+blockquote:before {
+  margin-right: 0.2em;
+  content: "\201C";
+  vertical-align: -0.4em;
+  color: #bbb;
+  font-size: 3em;
+  line-height: 0.1em;
+}
+blockquote .small:before,
+blockquote footer:before,
+blockquote small:before {
+  content: "\2014 \00A0";
+}
+@media (min-width: 768px) {
+  .cmp-cols.cols-md-2
+    .field__items
+    > *:not([class*=" col"]):not([class^="col"]),
+  .cmp-cols.cols-md-2
+    > *:not([class*=" col"]):not([class^="col"]):not(.field__items) {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+//END OF DRUPAL MARKUP STYLES
+
+#page {
+  .cmp-servicescards__cardcontainer {
+    .field__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > .field__item {
+        @media (min-width: 992px) {
+          flex: 0 0 28%;
+        }
+        .field.field--name-image.field--type-image.field--label-hidden.field__item {
+          margin: 0;
+        }
+        @media (max-width: 999px) {
+          .cmp-servcard {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      .cmp-servcard,
+      .last-card {
+        min-width: 100%;
+      }
+    }
+  }
+
+  .cmp-brandingcard {
+    .clearfix.text-formatted.field.field--name-field-brand-body.field--type-text-long.field--label-hidden.field__item
+      p {
+      opacity: 0.6;
+      font-size: 0.875rem;
+    }
+    .field--name-image {
+      @extend .mx-auto;
+      .cmp-image {
+        @media (max-width: 999px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .cmp-testimonial {
+    blockquote {
+      margin: 0 0 1rem;
+      padding: 0;
+      border-left: none;
+      background: white;
+      font-style: normal;
+    }
+    blockquote:before {
+      content: none;
+    }
+  }
+
+  .cmp-shadow-box-quote {
+    align-self: center;
+  }
+
+  .cmp-shadow-box-img {
+    // .field--name-field-testimonial-desk-image {
+
+    //     .field--name-image{
+    //         max-width: 100%;
+    //     }
+    // }
+  }
+
+  .cmp-image {
+    max-width: 100%;
+  }
+  .cmp-latest {
+    .container {
+      @media (min-width: 992px) {
+        max-width: 1200px;
+        padding: 0;
+      }
+    }
+    .cmp-latestcards__cardcontainer {
+      width: 100%;
+      .cmp-latestcard {
+        width: 100%;
+      }
+      .cmp-latestcard:hover {
+        box-shadow: none;
+      }
+      .cmp-latestcard:hover .cmp-imageblue .cmp-image {
+        opacity: 0.5;
+      }
+      .cmp-latestcard:hover .cmp-cardlink {
+        text-decoration: none;
+        cursor: pointer;
+        border-bottom: none;
+      }
+      .row {
+        display: grid;
+      }
+      .col-xs-12.col-sm-12.col-md-6.col-lg-6 {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        .cmp-latestcard {
+          .cmp-latestcard-content {
+            .field.field--name-field-posts-blog-post.field--type-entity-reference.field--label-hidden.field__item {
+              flex: 0 0 100%;
+              max-width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              margin: 0;
+            }
+          }
+          .field__item {
+            @media (min-width: 992px) {
+              display: inline-flex;
+              flex: 0 0 45%;
+              max-width: 45%;
+              margin: 0 1.5rem;
+              padding: 0;
+              .heading-title
+                .field.field--name-field-posts-headline.field--type-string.field--label-hidden.field__item {
+                min-width: 140px;
+              }
+              button.heading-link:hover {
+                border: none;
+              }
+            }
+          }
+          .field__item:hover {
+            box-shadow: 20px 19px 61px -25px rgba(0, 0, 0, 0.27);
+          }
+          .field__item:hover .cmp-imageblue .cmp-image {
+            opacity: 1;
+            transition: 0.3;
+          }
+          .field__item:hover .cmp-cardlink {
+            border-bottom: 2px solid #f16824;
+          }
+          .cmp-imageblue.bg-primary
+            .field.field--name-field-blog-desktop-image.field--type-entity-reference.field--label-hidden.field__item,
+          .cmp-imageblue.bg-primary
+            .field.field--name-field-blog-desktop-image.field--type-entity-reference.field--label-hidden.field__item
+            .field.field--name-image.field--type-image.field--label-hidden.field__item,
+          .cmp-latestcard__content
+            .field.field--name-field-blog-headline.field--type-string.field--label-hidden.field__item,
+          .cmp-text
+            .clearfix.text-formatted.field.field--name-field-blog-abstract.field--type-text-long.field--label-hidden.field__item,
+          .cmp-cardlink
+            .field.field--name-field-blog-cta.field--type-link.field--label-hidden.field__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 0;
+          }
+          .cmp-text
+            .clearfix.text-formatted.field.field--name-field-blog-abstract.field--type-text-long.field--label-hidden.field__item:hover {
+            box-shadow: none;
+          }
+          .cmp-cardlink
+            .field.field--name-field-blog-cta.field--type-link.field--label-hidden.field__item
+            a:hover {
+            text-decoration: none;
+            color: #1b3d6e;
+          }
+        }
+      }
+      .more-new.d-none.d-md-block {
+        width: 100%;
+      }
+      .more-news a {
+        color: white;
+      }
+      .more-news a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

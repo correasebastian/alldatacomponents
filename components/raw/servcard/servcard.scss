@@ -1,0 +1,159 @@
+/**
+ *  Main css for Servcard
+ */
+
+.cmp-servcard {
+  width: 335px;
+  height: 96px;
+  box-shadow: 20px 19px 61px -25px rgba(0, 0, 0, 0.27);
+  transition: 0.3s;
+  background: white;
+  padding: 0;
+
+  .cmp-servcard__image {
+    display: none;
+
+    // Since the card image is given a couple of margin especications these must been overidden
+    .field--type-entity-reference {
+      margin: 0;
+      font-family: inherit;
+    }
+    .field--type-image img {
+      margin: 0;
+    }
+
+    @media all and (min-width: 560px) {
+      .node .field--type-image {
+        margin: 0 !important;
+      }
+    }
+  }
+  .cmp-servcard__content {
+    padding: 30px;
+
+    .cmp-heading {
+      color: #1b3e6f;
+      display: inline-block;
+      width: 75%;
+      margin-bottom: 3rem;
+    }
+    .cmp-text {
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #54565a;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow-y: hidden;
+      margin-bottom: 1rem; //The text component turn from a p to a div which make it loose his margin at the bottom
+    }
+    .cmp-servcard__more {
+      display: inline-block;
+      width: 50px;
+      float: right;
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.mobile-overflow {
+  overflow: hidden;
+}
+
+.cmp-servcard__open {
+  transition: 0.3s;
+  height: 322px;
+}
+
+.last-card {
+  height: 322px;
+  text-align: center;
+
+  .cmp-servcard__content .cmp-servcard__more {
+    display: none;
+  }
+
+  .cmp-servcard__content .cmp-cardlink {
+    border: 2px solid #f16824;
+    padding: 10px 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .cmp-servcard,
+  .last-card {
+    -webkit-box-flex: 0;
+    flex: 1 0 25%;
+    max-width: 30%;
+    height: 535px;
+    box-shadow: none;
+    display: inline-block;
+
+    .cmp-servcard__image {
+      display: flex;
+      width: 100%;
+      max-height: 293px;
+      overflow: hidden;
+      .cmp-image {
+        width: 100%;
+      }
+    }
+
+    .cmp-servcard__content {
+      padding: 30px 40px;
+
+      .cmp-heading {
+        color: #1b3e6f;
+      }
+      .cmp-text {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #54565a;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow-y: hidden;
+      }
+      .cmp-servcard__more {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-overflow {
+    overflow: visible;
+  }
+
+  .last-card {
+    text-align: left;
+
+    .cmp-servcard__content .cmp-cardlink {
+      border: 0px;
+      padding: 0 0 7px 0;
+    }
+  }
+
+  .cmp-servcard:hover {
+    box-shadow: 20px 19px 61px -25px rgba(0, 0, 0, 0.27);
+  }
+  .cmp-servcard:hover .cmp-imageblue .cmp-image {
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .cmp-servcard:hover .cmp-cardlink {
+    text-decoration: none;
+    color: #1b3d6e;
+    cursor: pointer;
+    border-bottom: 2px solid #f16824;
+  }
+}
