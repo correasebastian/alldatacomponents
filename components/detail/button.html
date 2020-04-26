@@ -157,7 +157,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4082ef423f5aeef9f2eff0d0a557962a-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-button btn btn-outline-secondary"</span>&gt;</span>This is an button component!<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> [object Object] [object Object]</pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-button btn btn-outline-secondary"</span>&gt;</span>This is an button component!<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-servcard__more"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">../../images/plus-orange.svg</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"more"</span>&gt;</span> no/ and path<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -167,13 +169,15 @@
     <code class="Code Code--lang-twig">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-button btn btn-outline-secondary"</span>&gt;</span></span><span class="hljs-template-variable">{{btnText}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">set</span></span> var = {{'images/plus-orange.svg'}} %}</span><span class="xml">
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">set</span></span> var2 = {{'images/plus-orange.svg' | path}} %}</span><span class="xml">
- 
+</span><span class="hljs-comment">{# {% set var = {{'images/plus-orange.svg'}} %}
+{% set var2 = {{'images/plus-orange.svg' | path}} %} #}</span><span class="xml">
+     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-servcard__more"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=</span></span><span class="hljs-template-variable">{{'images/plus-orange.svg' |path}}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">alt</span>=<span class="hljs-string">"more"</span>&gt;</span> no/ and path<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+     </span><span class="hljs-comment">{# &lt;button class="cmp-servcard__more"&gt;&lt;img src={{'/images/plus-orange.svg' |path}} alt="more"&gt; / and Path&lt;/button&gt; #}</span><span class="xml">
+     </span><span class="hljs-comment">{# &lt;button class="cmp-servcard__more"&gt;&lt;img src={{'/images/plus-orange.svg' }} alt="more"&gt;No path&lt;/button&gt; #}</span><span class="xml">
 
- 
- </span><span class="hljs-template-variable">{{var | raw}}</span><span class="xml">
- </span><span class="hljs-template-variable">{{var2 | raw }}</span><span class="xml"></span></pre>
+
+ </span><span class="hljs-comment">{# {{var | raw}}
+ {{var2 | raw }} #}</span><span class="xml"></span></pre>
     </code>
 </div>
 
@@ -382,13 +386,15 @@ class Button {
 <p>This template for this component looks like this:</p>
 <pre><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-button btn btn-outline-secondary"</span>&gt;</span></span><span class="hljs-template-variable">{{btnText}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">set</span></span> var = {{'images/plus-orange.svg'}} %}</span><span class="xml">
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">set</span></span> var2 = {{'images/plus-orange.svg' | path}} %}</span><span class="xml">
+{# {% set var = </span><span class="hljs-template-variable">{{'images/plus-orange.svg'}}</span><span class="xml"> %}
+{% set var2 = </span><span class="hljs-template-variable">{{'images/plus-orange.svg' | path}}</span><span class="xml"> %} #}
+     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-servcard__more"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=</span></span><span class="hljs-template-variable">{{'images/plus-orange.svg' |path}}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">alt</span>=<span class="hljs-string">"more"</span>&gt;</span> no/ and path<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+     {# <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-servcard__more"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=</span></span><span class="hljs-template-variable">{{'/images/plus-orange.svg' |path}}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">alt</span>=<span class="hljs-string">"more"</span>&gt;</span> / and Path<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> #}
+     {# <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cmp-servcard__more"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=</span></span><span class="hljs-template-variable">{{'/images/plus-orange.svg' }}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">alt</span>=<span class="hljs-string">"more"</span>&gt;</span>No path<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> #}
 
 
-
- </span><span class="hljs-template-variable">{{var | raw}}</span><span class="xml">
- </span><span class="hljs-template-variable">{{var2 | raw }}</span><span class="xml"></span></code></pre><p>and it therefore expects a set of data to render it that is in the following format:</p>
+ {# </span><span class="hljs-template-variable">{{var | raw}}</span><span class="xml">
+ </span><span class="hljs-template-variable">{{var2 | raw }}</span><span class="xml"> #}</span></code></pre><p>and it therefore expects a set of data to render it that is in the following format:</p>
 <pre><code>{
     <span class="hljs-attr">"btnText"</span>: <span class="hljs-string">"This is an button component!"</span>
 }</code></pre>
