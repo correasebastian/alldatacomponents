@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"iT93":[function(require,module,exports) {
 module.exports = "/alldatacomponents/favicon.8fdade2f.ico";
-},{}],"g5IB":[function(require,module,exports) {
+},{}],"r0Pj":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -10931,7 +10931,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":"g5IB"}],"nQX8":[function(require,module,exports) {
+},{"process":"r0Pj"}],"nQX8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11131,7 +11131,7 @@ var _util = _interopRequireDefault(require("./util"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function (obj) { return typeof obj; }; } else { _typeof = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function (obj) { return typeof obj; }; } else { _typeof = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -16822,4 +16822,4 @@ require("../../components/groups/serve-wedo/serve-wedo");
 
 require("../../components/pages/demo01172020/demo01172020");
 },{"../favicon.ico":"iT93","./bootstrap":"djxb","../../components/groups/header/header":"MB8r","../../components/01-units/button/button":"Pb8S","../../components/blocks/jumbo/jumbo":"RC7m","../../components/01-units/skew/skew":"lWCn","../../components/01-units/threelines/threelines":"tv6F","../../components/01-units/heading/heading":"B2Yu","../../components/01-units/simpletext/simpletext":"tOnC","../../components/02-layout/cols/cols":"DEWh","../../components/blocks/brandingcard/brandingcard":"fhgk","../../components/01-units/image/image":"c7zH","../../components/01-units/unitmacros/unitmacros":"uHvI","../../components/groups/branding/branding":"EOau","../../components/groups/hero/hero":"ubaX","../../components/01-units/tricolor/tricolor":"cvIv","../../components/01-units/slider/slider":"n2tW","../../components/pages/homePage/homePage":"M1UY","../../components/blocks/shadow-box/shadow-box":"vyqg","../../components/01-units/quote/quote":"pN6H","../../components/groups/testimonial/testimonial":"VDGN","../../components/groups/servicescards/servicescards":"PEpE","../../components/blocks/servcard/servcard":"GUvY","../../components/blocks/imageblue/imageblue":"mBoU","../../components/01-units/cardlink/cardlink":"rWBe","../../components/01-units/companies/companies":"t2Rf","../../components/groups/latest/latest":"Y8a6","../../components/blocks/latestCard/latestCard":"ayc0","../../components/01-units/latestHeading/latestHeading":"jKVB","../../components/groups/whatwedo/whatwedo":"CQtJ","../../components/01-units/video/video":"Bokd","../../components/groups/footer/footer":"Nh8s","../../components/blocks/collapse-list/collapse-list":"g2KG","../../components/groups/Affilliations/Affilliations":"Lh5V","../../components/01-units/drupalitemsfacade/drupalitemsfacade":"wqYL","../../components/groups/whoweserve/whoweserve":"tmc8","../../components/01-units/servcard2/servcard2":"YVrB","../../components/groups/serve-wedo/serve-wedo":"Y47A","../../components/pages/demo01172020/demo01172020":"S8gT"}]},{},["NvjX"], null)
-//# sourceMappingURL=/alldatacomponents/js.ccc2ecca.js.map
+//# sourceMappingURL=/alldatacomponents/js.795db201.js.map
